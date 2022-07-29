@@ -1,0 +1,1348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap'); /*Como llamar: 'Montserrat Alternates', sans-serif;*/ 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');/*Como llamar: 'Playfair Display SC', serif;*/
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/liberation-serif.min.css");/*Como llamar: 'Liberation Serif', sans-serif;*/
+
+/*------Header------*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid #d9a7a7;
+}
+.menu{
+    list-style: none;
+    font-size: 15px;
+}
+.menu a{
+    text-decoration: none;
+    color: #d9a7a7;
+    font-family:  'Montserrat Alternates', sans-serif;
+}
+.menu > li{
+    display: inline-block;
+    margin: 20px;
+}
+.logo-header {
+    width: 100%;
+    height: 100px;
+}
+.boton-suscripcion{
+    background: black;
+    padding: 11px 32px;
+    border: 2px solid #d9a7a7;
+    color: #d9a7a7;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-family:  'Montserrat Alternates', sans-serif;
+}
+
+/*-----Sub-list menú-----*/
+/*TURNOS*/
+.turnos{
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+}
+.sub-menu{
+    position: absolute;
+    display: none;
+    padding-top: 20px;
+}
+.sub-menu > li{
+    display: block;
+}
+.sub-menu li a{
+    display: block;
+    color: #d9a7a7;
+    background-color: rgba(0, 0, 0, 0.836);
+    border: 1px solid #d9a7a7;
+    padding: 15px;
+    margin-left: -10px;
+    margin-right: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 160%;
+    text-align: center;
+}
+.turnos:hover ul{
+    display: block;
+}
+/*SERVICIOS*/
+.servicios-menu{
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+}
+.sub-menu-servicios{
+    position: absolute;
+    display: none;
+    padding-top: 20px;
+}
+.sub-menu-servicios > li{
+    display: block;
+}
+.sub-menu-servicios li a{
+    display: block;
+    color: #d9a7a7;
+    background-color: rgba(0, 0, 0, 0.836);
+    border: 1px solid #d9a7a7;
+    padding: 15px 8px 15px 8px;
+    margin-left: -10px;
+    margin-right: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 200%;
+    text-align: center;
+}
+.servicios-menu:hover ul{
+    display: block;
+}
+/*------Main (INDEX)------*/
+/*Section 0*/
+.carrusel{
+    height: 85vh;
+    width: 100%;
+    background-image: url(../img/carrusel.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrusel h1{
+    text-align: center;
+    font-size: 80px;
+    color: #0a0a0a;
+    font-family: 'Playfair Display SC', serif;
+}
+.div-carrusel h2{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-family: 'Playfair Display SC', serif;
+}
+/*section1* (nosotros)*/
+#nosotros{
+    background-color: black;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div-texto-nosotros{
+    color: #d9a7a7;
+    border-left: 15px solid;
+}
+.div-texto-nosotros h2{
+    font-size: 40px;
+    text-decoration: underline;
+    padding-inline: 30px;
+    font-family: 'Playfair Display SC', serif;
+}
+.div-texto-nosotros p{
+    font-size: 25px;
+    padding-inline: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.img-nosotros{
+    width: 100%;
+    padding: 3%;
+}
+/*section 2 (servicios)*/
+#servicios{
+    background-color: #d9a7a7;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+}
+.img-servicios img{
+    width: 80%;
+    height: 100%;
+    border: 10px solid black;
+}
+.div-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-servicios h2{
+    font-size: 40px;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    padding-bottom: 8%;
+}
+.div-servicios p{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-bottom: 10%;
+}
+.boton-mas-servicios{
+    padding-top: 10%;
+}
+.boton-mas-servicios a{
+    background: #d9a7a7;
+    padding: 11px 32px;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-family:  'Montserrat Alternates', sans-serif;
+}
+/*section 3 (producciones)*/
+#producciones{
+    background-color: black;
+    height: auto;
+    padding: 2% 2% 4% 2%;
+}
+.titulo-producciones {
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Playfair Display SC', serif;
+    color: #d9a7a7;
+    text-decoration: underline;
+    padding-bottom: 3%;
+}
+.div-img-producciones >div{
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly 
+}
+.div-img-producciones img{
+    width: 25%;
+    height: 100%;
+}
+.div-boton-mas-producciones{
+    display: flex;
+    justify-content: center;
+}
+.boton-mas{
+    background: black;
+    padding: 11px 32px;
+    border: 2px solid #d9a7a7;
+    color: #d9a7a7;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+/*section 4 (contactanos)*/
+#contactanos{
+    background-color: #d9a7a7;
+}
+.titulo-contactanos{
+    font-size: 40px;
+    font-family: 'Playfair Display SC', serif;
+    color: black;
+    text-decoration: underline;
+    padding: 30px;
+    text-align: center;
+}
+.div-container-contactanos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.div-info-contactanos{
+    margin-left: -10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.div-info-contactanos p{
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.form-contactanos div{
+    padding-bottom: 1%;
+}
+.div-asunto-contactanos input{
+    width: 90%;
+    height: 25px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.div-mensaje-contactanos textarea{
+    width: 90%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.div-nombre-email-contactanos div{
+    display: inline-block;
+    padding-right: 45px;
+}
+.div-nombre-email-contactanos input{
+    width: 120%;
+    height: 25px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.boton-enviar{
+    margin-top: 5%;
+}
+.boton-enviar a{
+    text-decoration: none;
+    background-color: #d9a7a7;
+    color: black;
+    font-size: 15px;
+    font-family: 'Liberation Serif', sans-serif;
+    border: 1px solid black;
+    padding: 10px 30px;
+    margin-left: 38%;
+}
+/*Icono Flotante*/
+.icono-flotante img{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/*-----------------------MAIN (Lista de precios)-------------------*/
+.section-img-logo{
+    width: 100%;
+    min-width: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-img-logo img{
+    width: 50%;
+    max-width: 50%;
+}
+.section-titulo-principios{
+    height: 300px;
+    background-color: black;
+    color: #d9a7a7;
+    border-bottom: 1px solid #d9a7a7;
+}
+.titulo-lista-precios h1{
+    margin-bottom: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #d9a7a7;
+}
+.principios-precios li{
+    margin-left: 22%;
+    margin-right: 20%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+}
+/*precios*/
+.div-conteiner-precios{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+.div-conteiner-precios > div{
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Liberation Serif', sans-serif;
+}
+.precios{
+    color: #d9a7a7;
+    background-color: black;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.titulo{
+    border: 2px solid #e6cfcf;
+    margin: 0% 20% 2% 20%;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: black;
+    background-color: #d9a7a7;
+    font-family: 'Playfair Display SC', serif;
+}
+/*-----------------------MAIN (Producciones)--------------------*/
+.section-hero-prod{
+    background-color: black;
+}
+.div-titulo-prod{
+    color: #d9a7a7;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Playfair Display SC', serif;
+}
+.div-titulo-prod h1{
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.div-titulo-prod h2{
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+.grupo-img-1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 90px 20px;
+    padding: 4% 4% 8% 4%;
+}
+.grupo-img-1 img{
+    width: 100%;
+    height: 100%;
+
+}
+.img4{
+    grid-column: span 3;
+    object-fit: cover
+}
+.img8{
+    grid-column: 1/3;
+}
+/*-------------------MAIN (Suscribete)---------------------*/
+.section-suscribete{
+    background-color: #d9a7a7;
+    padding: 5%;
+}
+.div-titulo-suscribete{
+    color: black;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.div-titulo-suscribete h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.div-titulo-suscribete h2{
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.div-beneficios{
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+}
+.div-beneficios li{
+    padding-bottom: 1%;
+    font-size: 25px;
+    font-family: 'Liberation Serif', sans-serif;
+    text-decoration: underline;
+}
+.div-h3-suscribete{
+    padding-bottom: 4%;
+}
+.div-h3-suscribete h3{
+    text-align: center;
+    font-size: 25px;
+}
+/*form*/
+.form-suscribete div{
+    padding-bottom: 2%;
+    width: auto;
+}
+.form-suscribete>div{
+    display: flex;
+    justify-content: center;
+}
+.div-form-suscribete input{
+    width: 100%;
+    height: 40px;
+    border: 3px solid black;
+}
+.div-form-suscribete>div{
+    display: inline-block;
+    width: 30%;
+    padding: 1%;
+}
+.div-label-nacimiento{
+    font-size: 20px;
+    padding-right: 42%;
+    margin-bottom: -2%;
+}
+/*boton suscribirme*/
+.boton-suscribirme{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+.boton-suscribirme a{
+    text-decoration: none;
+    background-color: #d9a7a7;
+    color: black;
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+    border: 3px solid black;
+    padding: 10px 30px;
+}
+/*----------------------MAIN (Turnos)------------------------*/
+.section-turnos{
+    padding: 8%;
+    text-align: center;
+    background-color: black;
+    color: #d9a7a7;
+}
+.div-titulo-turnos{
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 5px;
+}
+.div-titulo-turnos h1{
+    font-size: 50px;
+    text-decoration: underline;
+    padding-bottom: 1%;
+}
+.div-titulo-turnos h2{
+    font-size: 30px;
+}
+.div-opciones-turnos > div{
+    display: inline-block;
+    padding: 3%;
+}
+.div-block-sacar-mis-turnos h3{
+    padding-bottom: 10%;
+    font-size: 20px;
+    font-family: 'Playfair Display SC', serif;
+}
+.boton-sacar-mis-turnos a{
+    text-decoration: none;
+    background-color: #d9a7a7;
+    color: black;
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+    padding: 10px 30px;
+}
+.div-h4-turnos{
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+}
+/*-------------------MAIN (Sacar Turnos)---------------------*/
+.section-sacar-turno{
+    background-color: black;
+    color: #d9a7a7;
+    text-align: center;
+    padding-bottom: 3%;   
+}
+.titulo-sacar-turno{
+    padding: 2%;
+    text-align: left;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 3px;
+}
+.titulo-sacar-turno h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+.titulo-sacar-turno h2{
+    font-size: 15px;
+}
+/*form*/
+.div-radio-form > div{
+    display: inline-block;
+    padding: 2%;
+}
+.div-radio-form label{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+}
+.div-name-select-form{
+    padding-top: 2%;
+}
+.label-sacar-turnos{
+    padding-right: 1%;
+    padding-left: 2%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.div-option-form{
+    padding: 2%;
+}
+.div-option-form select{
+    height: 45.5px;
+    width: 15%;
+    border: 4px solid #d9a7a7;
+}
+.div-option-form input{
+    height: 40px;
+    width: 15%;
+    border: 4px solid #d9a7a7;
+}
+.div-terminos p{
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+    padding-bottom: 1%;
+}
+.div-check-terminos-sacar-turno{
+    padding: 0% 25% 2% 25%;
+    text-align: left;
+}
+.boton-reservar-turno a{
+    text-decoration: none;
+    background-color: #d9a7a7;
+    color: black;
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+    border: 3px solid black;
+    padding: 10px 30px;
+}
+/*-------------------MAIN (Mis Turnos)---------------------*/
+.section-mis-turnos{
+    background-color: #d9a7a7;
+    color: black;
+    padding-bottom: 1%; 
+    padding-top: 4%;
+}
+.div-titulo-mis-turnos{
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 3px;
+}
+.div-titulo-mis-turnos h1{
+    font-size: 40px;
+    text-decoration: underline;
+}
+.div-titulo-mis-turnos h2{
+    font-size: 15px;
+}
+.div-mis-turnos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+.div-mis-turnos>div{
+    width: 50%;
+    height: 20%;
+}
+.div-block-turnos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 2px solid black;
+    border-left: 8px solid black;
+}
+.div-block-turnos > div{
+    display: inline-block;
+}
+.div-block-turnos p{
+    display: inline-block;
+}
+.div-block-turnos a{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    text-decoration: none;
+    background-color: black;
+    color: #d9a7a7;
+    font-size: 15px;
+    font-family: 'Liberation Serif', sans-serif;
+    padding: 10px 30px;
+}
+/*-------------------------FOOTER-------------------------*/
+.div-footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 250px;
+    border-top: 1px solid #d9a7a7;
+}
+/*centro*/
+.logo-footer{
+    width: 100%;
+    height: 150px;
+}
+.div-iconos-footer img{
+    width: 45px;
+    height: 45px;
+}
+.div-iconos-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+/*Texto izquierda*/
+.div-conteiner-footer{
+    color: #d9a7a7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.div-texto-footer{
+    padding-bottom: 20px;
+}
+.div-texto-footer h3{
+    font-size: 20px;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #d9a7a7;
+}
+.div-texto-footer p{
+    font-size: 15px;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 1px;
+}
+.div-info-footer p{
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #e6cfcf;
+    font-family: 'Liberation Serif', sans-serif;
+}
+/*Texto derecha*/
+.div-horario-footer{
+    color: #d9a7a7;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.div-texto-horario-footer{
+    padding-bottom: 20px;
+}
+.div-texto-horario-footer h3{
+    font-size: 20px;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #d9a7a7;
+}
+.div-texto-horario-footer p{
+    font-size: 15px;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 1px;
+}
+.div-hora-footer div{
+    padding-bottom: 10px;
+}
+.dias{
+    font-size: 20px;
+    color: #e6cfcf;
+    font-family: 'Liberation Serif', sans-serif;
+}
+.hora{
+    font-size: 15px;
+    font-family: 'Liberation Serif', sans-serif;
+}
+/*Leyenda*/
+.div-leyenda-footer{
+    text-align: center;
+    background-color: black;
+    color: #d9a7a7;
+    font-family: 'Liberation Serif', sans-serif;
+    font-size: 15px;
+    padding-left: 60px;
+}
+
+/*-------------------------------------MEDIA QUERIES------------------------------------*/
+/*INDEX*/
+
+@media screen and (max-width:1298px) {
+    /*nosotros*/
+    .div-texto-nosotros p{
+        font-size: 22px;
+    }
+    /*contactanos*/
+    .div-container-contactanos{
+        flex-direction: column;
+    }
+    .div-form-contactanos{
+        padding-left: 4%;
+    }
+    /*MISTURNOS*/
+    .div-mis-turnos>div{
+        width: 40%;
+        height: 20%;
+    }
+}
+
+
+
+@media screen and (max-width:1116px) {
+    /*header*/
+    .header{
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    /*carrusel*/
+    .titulo-carrusel h1{
+        font-size: 60px;
+    }
+    /*nosotros*/
+    .div-texto-nosotros h2{
+        font-size: 35px;
+    }
+    .div-texto-nosotros p{
+        font-size: 20px;
+    }
+    /*LISTA DE PRECIOS*/
+    /*titulo*/
+    .section-titulo-principios{
+        height: auto;
+        padding-bottom: 5%;
+    }
+    .titulo-lista-precios h1{
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    /*precios*/
+    .div-conteiner-precios p{
+        font-size: 20px;
+    }
+    /*leyenda*/
+    .div-leyenda-footer {
+        padding-right: 15%;
+    }
+}
+@media screen and (max-width:1079px) {
+    /*nosotros*/
+    #nosotros{
+        flex-direction: column;
+        height: auto;
+        padding-top: 10%;
+    }
+    /*servicios*/
+    #servicios{
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+    }
+    .img-servicios{
+        display: flex;
+        justify-content: center;
+    }
+    .div-servicios{
+        order:-2;
+        padding-bottom: 5%;
+    }
+    /*producciones*/
+    #producciones{
+        height: auto;
+    }
+    .titulo-producciones{
+        text-align: center;
+    }
+    .div-img-producciones >div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-img-producciones img{
+        padding-bottom: 3%;
+        width: 50%;
+    }
+    /*contactanos*/
+    #contactanos{
+        padding: 2%;
+    }
+    .titulo-contactanos{
+        margin: auto;
+    }
+    .div-container-contactanos{
+        flex-direction: column;
+    }
+    .div-form-contactanos{
+        margin-left: 5%;
+    }
+    /*footer*/
+    .div-footer{
+        display: grid;
+        height: auto;
+        padding: 5% 0% 5% 4%;
+    }
+    .div-logo-iconos-footer{
+        order: -1;
+        padding-bottom: 10%;
+    }
+    .div-conteiner-footer{
+        margin-left: -80%;
+        padding-right: 60%;
+    }
+    .div-horario-footer{
+        margin-right: -80%;
+        padding-left: 60%;
+    }
+    /*iconoflotante*/
+    .icono-flotante img{
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        bottom: 20px;
+        right: auto;
+    }
+}
+
+@media screen and (max-width:938px) {
+    /*carrusel*/
+    .carrusel{
+        height: 50vh;
+    }
+    .titulo-carrusel h1{
+        font-size: 250%;
+    }
+    /*contactanos*/
+    .div-nombre-email-contactanos  div{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-nombre-email-contactanos input{
+        width: 102%;
+    }
+    .div-asunto-contactanos input{
+        width: 92.5%;
+    }
+    .div-mensaje-contactanos textarea{
+        width: 92.5%;
+    }
+    .boton-enviar{
+        padding-right: 12%;
+    }
+    /*LISTA DE PRECIOS*/
+    /*titulo*/
+    .titulo-lista-precios h1{
+        font-size: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    /*precios*/
+    .div-conteiner-precios p{
+        font-size: 30px;
+    }
+    /*SACARTURNOS*/
+    .section-sacar-turno{
+        padding: 6%;
+    }
+    .div-radio-form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    .div-option-form{
+        padding-bottom: 8%;
+    }
+    .div-option-form >label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+    .div-option-form select{
+        width: 30%;
+    }
+    .div-option-form input{
+        width: 30%;
+    }
+    .div-terminos{
+        padding-bottom: 5%;
+    }
+    /*SUSCRIBETE*/
+    .div-label-nacimiento{
+        padding-right: 35%;
+    }
+    /*leyenda*/
+    .div-leyenda-footer {
+        padding-right: 3%;
+    }
+    /*footer*/
+    .div-conteiner-footer{
+        margin-left: -10%;
+        padding-right: 0%;
+    }
+    .div-horario-footer{
+        margin-right: -10%;
+        padding-left: 0%;
+    }
+}
+
+
+@media screen and (max-width:734px) {
+    /*INDEX*/
+    .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    /*SACARTURNOS*/
+    .titulo-sacar-turno{
+        text-align: center;
+        padding-bottom: 4%;
+    }
+    /*SUSCRIBETE*/
+    /*PRODUCCIONES*/
+    .div-titulo-prod h1{
+        font-size: 190%;
+    }
+    .div-titulo-prod h2{
+        font-size: 300%;
+    }
+    .img1parte{
+        grid-column: 1/4;
+    }
+    .img3parte{
+        grid-column: 1/4;
+    }
+}
+
+@media screen and (max-width:670px) {
+    /*carrusel*/
+    .carrusel{
+        height: 50vh;
+    }
+    .titulo-carrusel h1{
+        font-size: 250%;
+    }
+    .titulo-carrusel h2{
+        font-size: 100%;
+    }
+    /*LISTA DE PRECIOS*/
+    /*titulo*/
+    .titulo-lista-precios h1{
+        font-size: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    /*precios*/
+    .div-conteiner-precios p{
+        font-size: 30px;
+    }
+    /*leyenda*/
+    .div-leyenda-footer {
+        padding-right: 3%;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .div-iframe-contactanos iframe{
+        width: 550px;
+        height: 350px;
+    }
+    /*SUSCRIBIRME*/
+    .form-suscribete>div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-suscribete input{
+        height: 50px;
+    }
+    .div-form-suscribete>div{
+        padding-bottom: 1%;
+        width: 44%;
+    }
+    .div-label-nacimiento{
+        padding-right: 0%;
+    }
+    /*MISTURNOS*/
+    .div-mis-turnos>div{
+        width: 60%;;
+        height: 20%;
+    }
+    .div-block-turnos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-block-turnos h3{
+        padding-bottom: 10%;
+    }
+    .div-block-turnos p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (max-width:609px) {
+    /*carrusel*/
+    .carrusel{
+        height: 40vh;
+    }
+    .titulo-carrusel h1{
+        font-size: 180%;
+    }
+    .titulo-carrusel h2{
+        font-size: 100%;
+    }
+    /*contactanos*/
+    .titulo-contactanos{
+        font-size: 35px;
+    }
+    .div-iframe-contactanos iframe{
+        width: 500px;
+        height: 300px;
+    }
+    .div-info-contactanos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-info-contactanos p{
+        padding-bottom: 3%;
+        font-size: 15px;
+    }
+    .div-nombre-email-contactanos input{
+        width: 105%;
+    }
+    /*LISTA DE PRECIOS*/
+    /*precios*/
+    .div-conteiner-precios p{
+        font-size: 25px;
+    }
+    /*leyenda*/
+    .div-leyenda-footer {
+        padding-right: 15%;
+    }
+    /*SUSCRIBETE*/
+    .div-beneficios{
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width:525px) {
+    /*contactanos*/
+    .div-iframe-contactanos iframe{
+        width: 450px;
+        height: 300px;
+    }
+    /*TURNOS*/
+    .div-titulo-turnos h1{
+        font-size: 35px;
+    }
+    .div-titulo-turnos h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    /*contactanos*/
+    .titulo-contactanos{
+        font-size: 30px;
+    }
+    .div-iframe-contactanos iframe{
+        width: 400px;
+        height: 300px;
+    }
+    /*PRODUCCIONES*/
+    .div-titulo-prod h1{
+        font-size: 150%;
+    }
+    .div-titulo-prod h2{
+        font-size: 250%;
+    }
+    /*LISTA DE PRECIOS*/
+    /*precios*/
+    .div-conteiner-precios p{
+        font-size: 20px;
+    }
+    /*SACARTURNOS*/
+    .div-option-form select{
+        width: 40%;
+    }
+    .div-option-form input{
+        width: 40%;
+    }
+    .div-terminos p{
+        font-size: 15px;
+    }
+    /*leyenda*/
+    .div-leyenda-footer {
+        padding-right: 15%;
+    }
+}
+
+@media screen and (max-width:434px) {
+    /*contactanos*/
+    .titulo-contactanos{
+        font-size: 30px;
+    }
+    .div-iframe-contactanos iframe{
+        width: 400px;
+        height: 350px;
+    }
+    .div-nombre-email-contactanos input{
+        width: 105%;
+    }
+    /*LISTA DE PRECIOS*/
+    /*precios*/
+    .div-conteiner-precios p{
+        font-size: 20px;
+    }
+    /*leyenda*/
+    .div-leyenda-footer {
+        padding-right: 15%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    /*carrusel*/
+    .carrusel{
+        height: 30vh;
+    }
+    .titulo-carrusel h1{
+        font-size: 150%;
+    }
+    .titulo-carrusel h2{
+        font-size: 100%;
+    }
+    /*servicios*/
+    .img.servicios{
+        width: 150px;
+        height: 150px;
+    }
+    /*contactanos*/
+    .titulo-contactanos{
+        font-size: 25px;
+    }
+    .div-iframe-contactanos iframe{
+        width: 300px;
+        height: 200px;
+    }
+    /*LISTA DE PRECIOS*/
+    /*titulo*/
+    .section-titulo-principios{
+        height: auto;
+        padding-bottom: 5%;
+    }
+    .titulo-lista-precios h1{
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    /*precios*/
+    .titulo h2{
+        font-size: 20px;
+    }
+    .div-conteiner-precios p{
+        font-size: 20px;
+    }
+    /*SUSCRIBETE*/
+    .div-titulo-suscribete h1{
+        font-size: 35px;
+    }
+    .div-titulo-suscribete h2{
+        font-size: 25px;
+    }
+    .div-beneficios ul li{
+        font-size: 22px;
+    }
+    /*footer*/
+    .div-conteiner-footer{
+        margin-left: -0%;
+        padding-right: 0%;
+    }
+    .div-horario-footer{
+        margin-right: -0%;
+        padding-left: 0%;
+    }
+    /*leyenda*/
+    .div-leyenda-footer {
+        padding-right: 15%;
+    }
+}
+
+@media screen and (max-width:390px) {
+    /*section o*/
+    .titulo-carrusel h1{
+        font-size: 150%;
+    }
+    .titulo-carrusel h2{
+        font-size: 80%;
+    }
+    /*nosotros*/
+    #nosotros{
+        padding: 4%;
+    }
+    .div-texto-nosotros h2{
+        font-size: 30px;
+    }
+    .div-texto-nosotros p{
+        font-size: 15px;
+    }
+    /*servicios*/
+    .div-servicios h2{
+        font-size: 30px;
+    }
+    .div-servicios p{
+        font-size: 15px;
+    }
+    .boton-mas-servicios a{
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+    /*producciones*/
+    .titulo-producciones{
+        font-size: 30px;
+    }
+    .div-boton-mas-producciones{
+        padding-bottom: 2%;
+    }
+    .div-boton-mas-producciones a{
+        font-size: 15px;
+        padding: 8px 20px;
+    }
+    /*contactanos*/
+    .titulo-contactanos{
+        font-size: 25px;
+    }
+    .div-info-contactanos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-info-contactanos p{
+        padding-bottom: 3%;
+    }
+    .div-iframe-contactanos iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .div-nombre-email-contactanos input{
+        width: 106%;
+    }
+    .div-asunto-contactanos input{
+        width: 92.5%;
+    }
+    .div-mensaje-contactanos textarea{
+        width: 92.5%;
+    }
+    .boton-enviar{
+        padding-right: 12%;
+    }
+    /*LISTA DE PRECIOS*/
+    /*precios*/
+    .div-conteiner-precios p{
+        font-size: 20px;
+    }
+    /*PRODUCCIONES*/
+    .div-titulo-prod h1{
+        font-size: 100%;
+    }
+    .div-titulo-prod h2{
+        font-size: 200%;
+    }
+    /*SACARTURNOS*/
+    .div-option-form select{
+        width: 48%;
+    }
+    .div-option-form input{
+        width: 48%;
+    }
+    /*leyenda*/
+    .div-leyenda-footer {
+        padding-right: 15%;
+    }
+}

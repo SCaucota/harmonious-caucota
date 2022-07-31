@@ -26,6 +26,9 @@
     color: #d9a7a7;
     font-family:  'Montserrat Alternates', sans-serif;
 }
+.menu a:hover{
+    text-decoration: underline;
+}
 .menu > li{
     display: inline-block;
     margin: 20px;
@@ -44,7 +47,10 @@
     text-decoration: none;
     font-family:  'Montserrat Alternates', sans-serif;
 }
-
+.boton-suscripcion:hover{
+    background-color: #d9a7a7;
+    color: black;
+}
 /*-----Sub-list menú-----*/
 /*TURNOS*/
 .turnos{
@@ -175,6 +181,20 @@
     flex-direction: column;
     align-items: center;
 }
+.div-servicios-plus{
+    display: flex;
+}
+.div-servicios-img-plus>div{
+    padding-bottom: 150%;
+}
+.div-servicios-img-plus{
+    display: flex;
+    flex-direction: column;
+}
+.div-servicios-img-plus img{
+    width: 60%;
+    padding-bottom: 40%;
+}
 .div-servicios h2{
     font-size: 40px;
     color: black;
@@ -203,6 +223,10 @@
     text-decoration: none;
     font-family:  'Montserrat Alternates', sans-serif;
 }
+.boton-mas-servicios a:hover{
+    background-color: black;
+    color: #d9a7a7;
+}
 /*section 3 (producciones)*/
 #producciones{
     background-color: black;
@@ -227,6 +251,10 @@
     width: 25%;
     height: 100%;
 }
+.div-img-producciones img:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 2s;
+}
 .div-boton-mas-producciones{
     display: flex;
     justify-content: center;
@@ -240,6 +268,10 @@
     letter-spacing: 1.5px;
     text-decoration: none;
     font-family: 'Montserrat Alternates', sans-serif;
+}
+.boton-mas:hover{
+    background-color: #d9a7a7;
+    color: black;
 }
 /*section 4 (contactanos)*/
 #contactanos{
@@ -304,6 +336,10 @@
     border: 1px solid black;
     padding: 10px 30px;
     margin-left: 38%;
+}
+.boton-enviar a:hover{
+    background-color: black;
+    color: #d9a7a7;
 }
 /*Icono Flotante*/
 .icono-flotante img{
@@ -373,34 +409,71 @@
     font-size: 15px;
     letter-spacing: 2px;
     color: black;
-    background-color: #d9a7a7;
+    background: radial-gradient(circle, rgba(230,207,207,1) 9%, rgba(217,167,167,1) 41%, rgba(212,152,152,1) 100%);
     font-family: 'Playfair Display SC', serif;
 }
 /*-----------------------MAIN (Producciones)--------------------*/
 .section-hero-prod{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
 }
 .div-titulo-prod{
+    width: 50%;
     color: #d9a7a7;
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
     font-family: 'Playfair Display SC', serif;
+    
 }
 .div-titulo-prod h1{
     font-size: 30px;
     letter-spacing: 5px;
+    animation-duration: 4s;
+    animation-name: tituloproduccionesh1;
+}
+@keyframes tituloproduccionesh1{
+    from{
+        color: black;
+    }
+    top{
+        color: #d9a7a7;
+    }
 }
 .div-titulo-prod h2{
     font-size: 50px;
     letter-spacing: 20px;
+}
+.div-galeria{
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: tituloproduccionesh2;
+}
+@keyframes tituloproduccionesh2{
+    0%{
+        color: rgb(190, 148, 190);
+    }
+    25%{
+        color: #e59393;
+    }
+    50%{
+        color: #d9a7a7;
+    }
+    75%{
+        color: #e6cfcf;
+    }
+    100%{
+        color: rgb(190, 148, 190);
+    }
 }
 .grupo-img-1{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 90px 20px;
-    padding: 4% 4% 8% 4%;
+    padding: 5% 4% 8% 4%;
 }
 .grupo-img-1 img{
     width: 100%;
@@ -426,8 +499,22 @@
     padding-bottom: 5%;
 }
 .div-titulo-suscribete h1{
-    font-size: 50px;
+    font-size: 100%;
     letter-spacing: 5px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: titulosuscribete;
+}
+@keyframes titulosuscribete{
+    0%{
+        font-size: 50px;
+    }
+    50%{
+        font-size: 55px;
+    }
+    100%{
+        font-size: 50px;
+    }
 }
 .div-titulo-suscribete h2{
     font-size: 30px;
@@ -490,6 +577,10 @@
     border: 3px solid black;
     padding: 10px 30px;
 }
+.boton-suscribirme a:hover{
+    background-color: black;
+    color: #d9a7a7;
+}
 /*----------------------MAIN (Turnos)------------------------*/
 .section-turnos{
     padding: 8%;
@@ -525,6 +616,11 @@
     font-size: 20px;
     font-family: 'Liberation Serif', sans-serif;
     padding: 10px 30px;
+}
+.boton-sacar-mis-turnos a:hover{
+    background-color: black;
+    color: #d9a7a7;
+    border: 2px solid #d9a7a7 ;
 }
 .div-h4-turnos{
     font-size: 20px;
@@ -598,6 +694,11 @@
     border: 3px solid black;
     padding: 10px 30px;
 }
+.boton-reservar-turno a:hover{
+    background-color: black;
+    color: #d9a7a7;
+    border: 2px solid #d9a7a7;
+}
 /*-------------------MAIN (Mis Turnos)---------------------*/
 .section-mis-turnos{
     background-color: #d9a7a7;
@@ -653,6 +754,10 @@
     font-family: 'Liberation Serif', sans-serif;
     padding: 10px 30px;
 }
+.div-block-turnos a:hover{
+    background-color: red;
+    color: black;
+}
 /*-------------------------FOOTER-------------------------*/
 .div-footer{
     background-color: black;
@@ -670,6 +775,10 @@
 .div-iconos-footer img{
     width: 45px;
     height: 45px;
+}
+.div-iconos-footer img:hover{
+    transform: scale(1.5,1.5);
+    transition-duration: 1s;
 }
 .div-iconos-footer{
     display: flex;

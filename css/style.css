@@ -181,20 +181,6 @@
     flex-direction: column;
     align-items: center;
 }
-.div-servicios-plus{
-    display: flex;
-}
-.div-servicios-img-plus>div{
-    padding-bottom: 150%;
-}
-.div-servicios-img-plus{
-    display: flex;
-    flex-direction: column;
-}
-.div-servicios-img-plus img{
-    width: 60%;
-    padding-bottom: 40%;
-}
 .div-servicios h2{
     font-size: 40px;
     color: black;

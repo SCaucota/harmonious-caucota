@@ -907,6 +907,10 @@ body{
 }
 
 @media screen and (max-width:938px) {
+    /*------Header------*/
+    .img-logo{
+        width: 20%;
+    }
     /*contactanos*/
     .div-nombre-email-contactanos  div{
         display: flex;
@@ -1055,6 +1059,10 @@ body{
 }
 
 @media screen and (max-width:609px) {
+    /*------Header------*/
+    .img-logo{
+        width: 25%;
+    }
     /*contactanos*/
     .titulo-contactanos{
         font-size: 35px;
@@ -1098,6 +1106,10 @@ body{
 }
 
 @media screen and (max-width:490px) {
+    /*------Header------*/
+    .img-logo{
+        width: 30%;
+    }
     /*contactanos*/
     .titulo-contactanos{
         font-size: 30px;
@@ -1206,6 +1218,10 @@ body{
 @media screen and (max-width:390px) {
     .titulo-querie h2{
         font-size: 25px;
+    }
+    /*------Header------*/
+    .img-logo{
+        width: 40%;
     }
     /*nosotros*/
     #nosotros{

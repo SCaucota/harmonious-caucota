@@ -341,8 +341,8 @@
 }
 .div-conteiner-precios > div{
     display: inline-block;
-    font-size: 30px;
     font-family: 'Liberation Serif', sans-serif;
+    width: 50%;
 }
 .precios{
     color: #d9a7a7;
@@ -356,9 +356,20 @@
     text-align: center;
     font-size: 15px;
     letter-spacing: 2px;
-    color: black;
-    background: radial-gradient(circle, rgba(230,207,207,1) 9%, rgba(217,167,167,1) 41%, rgba(212,152,152,1) 100%);
+    background-color: black;
+    color: #d9a7a7;
     font-family: 'Playfair Display SC', serif;
+}
+.table-active{
+    --bs-table-accent-bg: black;
+    color: #d9a7a7;
+}
+.table>:not(caption)>*>* {
+    border-bottom-width: 0px;
+}
+.table{
+    background-color: #d9a7a7;
+    font-size: 20px;
 }
 /*-----------------------MAIN (Producciones)--------------------*/
 .section-hero-prod{
@@ -447,22 +458,8 @@
     padding-bottom: 5%;
 }
 .div-titulo-suscribete h1{
-    font-size: 100%;
+    font-size: 50px;
     letter-spacing: 5px;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-name: titulosuscribete;
-}
-@keyframes titulosuscribete{
-    0%{
-        font-size: 50px;
-    }
-    50%{
-        font-size: 55px;
-    }
-    100%{
-        font-size: 50px;
-    }
 }
 .div-titulo-suscribete h2{
     font-size: 30px;
@@ -487,28 +484,19 @@
     font-size: 25px;
 }
 /*form*/
-.form-suscribete div{
-    padding-bottom: 2%;
-    width: auto;
-}
 .form-suscribete>div{
     display: flex;
+    justify-content: space-evenly;
+}
+.caja-titulo-suscribete{
+    width: 100%;
+    background-color: #e6cfcf;
+    font-family: 'Montserrat Alternates', sans-serif;
     justify-content: center;
 }
-.div-form-suscribete input{
-    width: 100%;
-    height: 40px;
-    border: 3px solid black;
-}
 .div-form-suscribete>div{
-    display: inline-block;
     width: 30%;
-    padding: 1%;
-}
-.div-label-nacimiento{
-    font-size: 20px;
-    padding-right: 42%;
-    margin-bottom: -2%;
+    height: 100%;
 }
 /*boton suscribirme*/
 .boton-suscribirme{
@@ -565,7 +553,7 @@
 .input-group{
     width: 40%;
 }
-.caja-titulo-suscribete{
+.caja-titulo-sacar-turno{
     width: 100%;
     background-color: #e6cfcf;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -635,43 +623,23 @@
 }
 .div-mis-turnos{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 4%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-.div-mis-turnos>div{
-    width: 50%;
-    height: 20%;
+.card{
+    background-color: #d9a7a7;
 }
-.div-block-turnos{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2%;
-    padding: 2%;
-    border: 2px solid black;
-    border-left: 8px solid black;
-}
-.div-block-turnos > div{
-    display: inline-block;
-}
-.div-block-turnos p{
-    display: inline-block;
-}
-.div-block-turnos a{
-    display: flex;
-    align-items: right;
-    justify-content: right;
-    text-decoration: none;
+.card-header{
     background-color: black;
-    color: #d9a7a7;
-    font-size: 15px;
-    font-family: 'Liberation Serif', sans-serif;
-    padding: 10px 30px;
+    color: #e6cfcf;
+    text-align: center;
 }
-.div-block-turnos a:hover{
-    background-color: red;
-    color: black;
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*-------------------------FOOTER-------------------------*/
 body{
@@ -783,11 +751,6 @@ body{
     .div-container-contactanos{
         flex-direction: column;
     }
-    /*MISTURNOS*/
-    .div-mis-turnos>div{
-        width: 40%;
-        height: 20%;
-    }
 }
 
 @media screen and (max-width:1116px) {
@@ -809,10 +772,6 @@ body{
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 5%;
-    }
-    /*precios*/
-    .div-conteiner-precios p{
-        font-size: 20px;
     }
 }
 @media screen and (max-width:1079px) {
@@ -933,10 +892,6 @@ body{
         margin-right: 5%;
         margin-bottom: 5%;
     }
-    /*precios*/
-    .div-conteiner-precios p{
-        font-size: 30px;
-    }
     /*SACARTURNOS*/
     .section-sacar-turno{
         padding: 6%;
@@ -968,6 +923,9 @@ body{
     /*SUSCRIBETE*/
     .div-label-nacimiento{
         padding-right: 35%;
+    }
+    .div-mis-turnos{
+        flex-direction: column;
     }
     /*footer*/
     .div-conteiner-footer{
@@ -1012,10 +970,6 @@ body{
         margin-right: 5%;
         margin-bottom: 5%;
     }
-    /*precios*/
-    .div-conteiner-precios p{
-        font-size: 30px;
-    }
 }
 
 @media screen and (max-width:660px) {
@@ -1037,11 +991,6 @@ body{
     }
     .div-label-nacimiento{
         padding-right: 0%;
-    }
-    /*MISTURNOS*/
-    .div-mis-turnos>div{
-        width: 60%;;
-        height: 20%;
     }
     .div-block-turnos{
         flex-direction: column;
@@ -1078,11 +1027,6 @@ body{
     .div-info-contactanos p{
         padding-bottom: 3%;
         font-size: 15px;
-    }
-    /*LISTA DE PRECIOS*/
-    /*precios*/
-    .div-conteiner-precios p{
-        font-size: 25px;
     }
     /*SUSCRIBETE*/
     .div-beneficios{
@@ -1125,11 +1069,6 @@ body{
     .div-titulo-prod h2{
         font-size: 250%;
     }
-    /*LISTA DE PRECIOS*/
-    /*precios*/
-    .div-conteiner-precios p{
-        font-size: 20px;
-    }
     /*SACARTURNOS*/
     .div-option-form select{
         width: 40%;
@@ -1153,11 +1092,6 @@ body{
     }
     .div-nombre-email-contactanos input{
         width: 105%;
-    }
-    /*LISTA DE PRECIOS*/
-    /*precios*/
-    .div-conteiner-precios p{
-        font-size: 20px;
     }
 }
 
@@ -1189,9 +1123,6 @@ body{
     }
     /*precios*/
     .titulo h2{
-        font-size: 20px;
-    }
-    .div-conteiner-precios p{
         font-size: 20px;
     }
     /*SUSCRIBETE*/
@@ -1250,11 +1181,6 @@ body{
     .div-info-contactanos{
         flex-direction: column;
         align-items: center;
-    }
-    /*LISTA DE PRECIOS*/
-    /*precios*/
-    .div-conteiner-precios p{
-        font-size: 20px;
     }
     /*PRODUCCIONES*/
     .div-titulo-prod h1{

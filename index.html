@@ -36,9 +36,8 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                                 Turnos</a>
                             <ul class="dropdown-menu sublista-turnos" aria-labelledby="navbarDropdown">
-                                <li class="turnos-sublist"><a class="dropdown-item" href="./pages/sacarturno.html">Sacar
-                                        Turno</a></li>
-                                <li><a class="dropdown-item" href="./pages/misturnos.html">Mis Turnos</a></li>
+                                <li class="turnos-sublist sublista-sacar-turnos"><a class="dropdown-item" href="./pages/sacarturno.html">Sacar Turno</a></li>
+                                <li class="turnos-sublist"><a class="dropdown-item "href="./pages/misturnos.html">Mis Turnos</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -229,19 +228,19 @@
                     </div>
                     <form class="form-contactanos" action="">
                         <div>
-                            <div class="div-nombre-email-contactanos">
-                                <div>
-                                    <input type="text" name="nombre" placeholder="Nombre">
+                            <div class="form-row">
+                                <div class="col div-nombre">
+                                    <input type="text" class="form-control" placeholder="Nombre">
                                 </div>
-                                <div>
-                                    <input type="email" name="email" placeholder="Email">
+                                <div class="col">
+                                    <input type="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                             <div class="div-asunto-contactanos">
-                                <input type="text" name="asunto" placeholder="Asunto">
+                                <input type="text" class="form-control" placeholder="Asunto">
                             </div>
-                            <div class="div-mensaje-contactanos">
-                                <textarea name="mensaje" id="" cols="50" rows="10" placeholder="Mensaje"></textarea>
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="7"></textarea>
                             </div>
                             <div class="boton-enviar">
                                 <a href="">Enviar</a>

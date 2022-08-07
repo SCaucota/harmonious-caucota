@@ -31,7 +31,7 @@
     text-decoration: underline;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 3rem;
+    padding-right: 2rem;
 }
 /*boton-suscripcion*/
 .div-boton-suscripcion{
@@ -68,7 +68,7 @@
     text-align: center;
     padding: 2%;
 }
-.turnos-sublist{
+.sublista-sacar-turnos{
     border-bottom: 1px solid #d9a7a7;
 }
 /*----------------Main (INDEX)--------------------*/
@@ -91,7 +91,7 @@
     font-family: 'Playfair Display SC', serif;
 }
 .div-texto-nosotros p{
-    font-size: 150%;
+    font-size: 140%;
     padding-inline: 30px;
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -164,6 +164,7 @@
 .accordion-button:focus{
     box-shadow: 0 0 0 0.25rem #d9a7a7;
 }
+/*boton lista de precios*/
 .boton-mas-servicios a{
     background: #d9a7a7;
     padding: 11px 32px;
@@ -227,6 +228,7 @@
 /*section 4 (contactanos)*/
 #contactanos{
     background-color: #d9a7a7;
+    padding: 2%;
 }
 .titulo-contactanos{
     font-size: 40px;
@@ -238,43 +240,38 @@
 }
 .div-container-contactanos{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding-bottom: 2%;
 }
 .div-info-contactanos{
     padding-bottom: 5%;
     padding-top: 5%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 .div-info-contactanos p{
-    display: inline-block;
     font-size: 12px;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 .form-contactanos div{
     padding-bottom: 1%;
 }
-.div-asunto-contactanos input{
-    width: 100%;
-    height: 25px;
-    font-family: 'Montserrat Alternates', sans-serif;
+.form-row{
+    display: flex;
+    flex-direction: row;
 }
-.div-mensaje-contactanos textarea{
-    width: 100%;
-    font-family: 'Montserrat Alternates', sans-serif;
+.div-nombre{
+    margin-right: 2%;
 }
-.div-nombre-email-contactanos div{
-    display: inline-block;
-    padding-right: 45px;
+.div-asunto-contactanos{
+    margin-bottom: 1%;
 }
-.div-nombre-email-contactanos input{
-    width: 120%;
-    font-family: 'Montserrat Alternates', sans-serif;
-}
+/*boton enviar*/
 .boton-enviar{
     margin-top: 5%;
+    display: flex;
+    justify-content: center;
 }
 .boton-enviar a{
     text-decoration: none;
@@ -284,7 +281,6 @@
     font-family: 'Liberation Serif', sans-serif;
     border: 1px solid black;
     padding: 10px 30px;
-    margin-left: 38%;
 }
 .boton-enviar a:hover{
     background-color: black;
@@ -312,20 +308,18 @@
     max-width: 50%;
 }
 .section-titulo-principios{
-    height: 300px;
+    height: auto;
     background-color: black;
     color: #d9a7a7;
     border-bottom: 1px solid #d9a7a7;
 }
 .titulo-lista-precios h1{
     margin-bottom: 2%;
-    margin-left: 30%;
-    margin-right: 30%;
     text-align: center;
     font-size: 25px;
     font-family: 'Playfair Display SC', serif;
     letter-spacing: 3px;
-    border-bottom: 1px solid #d9a7a7;
+    text-decoration: underline;
 }
 .principios-precios li{
     margin-left: 22%;
@@ -459,8 +453,24 @@
     padding-bottom: 5%;
 }
 .div-titulo-suscribete h1{
-    font-size: 50px;
     letter-spacing: 5px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: titulosuscribeteh1;
+}
+@keyframes titulosuscribeteh1{
+    0%{
+        font-size: 50px;
+    }
+    50%{
+        font-size: 80px;
+    }
+    100%{
+        font-size: 50px;
+    }
+}
+.div-suscribete-efecto{
+    height: 100px;
 }
 .div-titulo-suscribete h2{
     font-size: 30px;
@@ -746,7 +756,7 @@ body{
 @media screen and (max-width:1298px) {
     /*nosotros*/
     .div-texto-nosotros p{
-        font-size: 22px;
+        font-size: 20px;
     }
     /*contactanos*/
     .div-container-contactanos{
@@ -759,20 +769,9 @@ body{
     .div-texto-nosotros h2{
         font-size: 35px;
     }
-    .div-texto-nosotros p{
-        font-size: 20px;
-    }
     /*LISTA DE PRECIOS*/
-    /*titulo*/
-    .section-titulo-principios{
-        height: auto;
-        padding-bottom: 5%;
-    }
     .titulo-lista-precios h1{
-        font-size: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
+        font-size: 30px;
     }
 }
 @media screen and (max-width:1079px) {
@@ -832,12 +831,6 @@ body{
     .titulo-contactanos{
         margin: auto;
     }
-    .div-container-contactanos{
-        flex-direction: column;
-    }
-    .div-form-contactanos{
-        margin-left: 5%;
-    }
     /*footer*/
     .div-footer{
         display: grid;
@@ -866,56 +859,34 @@ body{
     }
 }
 
+@media screen and (max-width:988px) {
+    /*-----Sub-list menú-----*/
+    /*TURNOS*/
+    .sublista-turnos{
+        border: none;
+    }
+    .turnos-sublist{
+        border-bottom: none;
+        text-decoration: 3px underline #d9a7a7;
+        padding: 1% 2% 1% 0%;
+    }
+    .turnos-sublist a{
+        color: #e59393;
+    }
+}
+
 @media screen and (max-width:938px) {
-    /*contactanos*/
-    .div-nombre-email-contactanos  div{
-        display: flex;
-        flex-direction: column;
-    }
-    .div-nombre-email-contactanos input{
-        width: 102%;
-    }
-    .div-asunto-contactanos input{
-        width: 92.5%;
-    }
-    .div-mensaje-contactanos textarea{
-        width: 92.5%;
-    }
     /*LISTA DE PRECIOS*/
     /*titulo*/
     .titulo-lista-precios h1{
-        font-size: 30px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
+        font-size: 20px;
     }
     /*SACARTURNOS*/
-    .section-sacar-turno{
-        padding: 6%;
-    }
     .div-radio-form {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    .div-option-form{
-        padding-bottom: 8%;
-    }
-    .div-option-form >label{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2%;
-    }
-    .div-option-form select{
-        width: 30%;
-    }
-    .div-option-form input{
-        width: 30%;
-    }
-    .div-terminos{
-        padding-bottom: 5%;
     }
     /*SUSCRIBETE*/
     .div-label-nacimiento{
@@ -942,7 +913,6 @@ body{
         text-align: center;
         padding-bottom: 4%;
     }
-    /*SUSCRIBETE*/
     /*PRODUCCIONES*/
     .div-titulo-prod h1{
         font-size: 190%;
@@ -958,18 +928,8 @@ body{
     }
 }
 
-@media screen and (max-width:670px) {
-    /*LISTA DE PRECIOS*/
-    /*titulo*/
-    .titulo-lista-precios h1{
-        font-size: 30px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
-    }
-}
-
 @media screen and (max-width:660px) {
+    /*contactanos*/
     .div-iframe-contactanos iframe{
         width: 550px;
         height: 350px;
@@ -986,21 +946,25 @@ body{
         padding-bottom: 1%;
         width: 44%;
     }
-    .div-label-nacimiento{
-        padding-right: 0%;
-    }
-    .div-block-turnos{
-        flex-direction: column;
-        align-items: center;
-    }
     .div-block-turnos h3{
         padding-bottom: 10%;
     }
-    .div-block-turnos p{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 10%;
+    .div-titulo-suscribete h2{
+        font-size: 25px;
+    }
+    .div-suscribete-efecto{
+        height: 50px;
+    }
+    @keyframes titulosuscribeteh1{
+        0%{
+            font-size: 40px;
+        }
+        50%{
+            font-size: 50px;
+        }
+        100%{
+            font-size: 40px;
+        }
     }
 }
 
@@ -1012,10 +976,6 @@ body{
     .div-iframe-contactanos iframe{
         width: 500px;
         height: 300px;
-    }
-    .div-info-contactanos{
-        flex-direction: column;
-        align-items: center;
     }
     .div-info-contactanos p{
         padding-bottom: 3%;
@@ -1032,6 +992,13 @@ body{
     .div-iframe-contactanos iframe{
         width: 450px;
         height: 300px;
+    }
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-nombre{
+        margin-right: 0%;
     }
     /*TURNOS*/
     .div-titulo-turnos h1{
@@ -1059,40 +1026,19 @@ body{
         font-size: 250%;
     }
     /*SACARTURNOS*/
-    .div-option-form select{
-        width: 40%;
-    }
-    .div-option-form input{
-        width: 40%;
-    }
     .div-terminos p{
         font-size: 15px;
     }
 }
 
-@media screen and (max-width:434px) {
-    /*contactanos*/
-    .titulo-contactanos{
-        font-size: 30px;
-    }
-    .div-nombre-email-contactanos input{
-        width: 105%;
-    }
-}
-
 @media screen and (max-width:426px) {
-    /*servicios*/
-    .img.servicios{
-        width: 150px;
-        height: 150px;
-    }
     /*contactanos*/
     .titulo-contactanos{
         font-size: 25px;
     }
     .div-iframe-contactanos iframe{
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
     }
     /*LISTA DE PRECIOS*/
     /*titulo*/
@@ -1101,10 +1047,10 @@ body{
         padding-bottom: 5%;
     }
     .titulo-lista-precios h1{
-        font-size: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
+        font-size: 15px;
+    }
+    .principios-precios li{
+        font-size: 15px;
     }
     /*precios*/
     .titulo h2{
@@ -1119,6 +1065,20 @@ body{
     }
     .div-beneficios ul li{
         font-size: 22px;
+    }
+    .div-suscribete-efecto{
+        height: 40px;
+    }
+    @keyframes titulosuscribeteh1{
+        0%{
+            font-size: 25px;
+        }
+        50%{
+            font-size: 30px;
+        }
+        100%{
+            font-size: 25px;
+        }
     }
     /*footer*/
     .div-conteiner-footer{
@@ -1136,36 +1096,18 @@ body{
         font-size: 25px;
     }
     /*nosotros*/
-    #nosotros{
-        padding: 4%;
-    }
     .div-texto-nosotros p{
         font-size: 15px;
     }
     /*servicios*/
-    .div-servicios p{
-        font-size: 15px;
-    }
     .boton-mas-servicios a{
         font-size: 15px;
         padding: 8px 20px;
     }
     /*producciones*/
-    .div-boton-mas-producciones{
-        padding-bottom: 2%;
-    }
     .div-boton-mas-producciones a{
         font-size: 15px;
         padding: 8px 20px;
-    }
-    /*contactanos*/
-    .div-info-contactanos{
-        flex-direction: column;
-        align-items: center;
-    }
-    .div-iframe-contactanos iframe{
-        width: 250px;
-        height: 150px;
     }
     /*PRODUCCIONES*/
     .div-titulo-prod h1{
@@ -1173,12 +1115,5 @@ body{
     }
     .div-titulo-prod h2{
         font-size: 200%;
-    }
-    /*SACARTURNOS*/
-    .div-option-form select{
-        width: 48%;
-    }
-    .div-option-form input{
-        width: 48%;
     }
 }

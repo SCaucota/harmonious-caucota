@@ -8,14 +8,14 @@
     box-sizing: border-box;
 }
 
-/*------Header------*/
-.img-logo{
-    width: 12%;
-}
+/*-------------------Header---------------*/
 .header{
     position: sticky;
     top: 0px;
     z-index: 100;
+}
+.img-logo{
+    width: 10em;
 }
 .menu{
     background-color: black;
@@ -33,6 +33,7 @@
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 3rem;
 }
+/*boton-suscripcion*/
 .div-boton-suscripcion{
     padding-right: 2%;
 }
@@ -70,7 +71,7 @@
 .turnos-sublist{
     border-bottom: 1px solid #d9a7a7;
 }
-/*------Main (INDEX)------*/
+/*----------------Main (INDEX)--------------------*/
 /*section1* (nosotros)*/
 #nosotros{
     background-color: black;
@@ -866,10 +867,6 @@ body{
 }
 
 @media screen and (max-width:938px) {
-    /*------Header------*/
-    .img-logo{
-        width: 20%;
-    }
     /*contactanos*/
     .div-nombre-email-contactanos  div{
         display: flex;
@@ -1008,10 +1005,6 @@ body{
 }
 
 @media screen and (max-width:609px) {
-    /*------Header------*/
-    .img-logo{
-        width: 25%;
-    }
     /*contactanos*/
     .titulo-contactanos{
         font-size: 35px;
@@ -1050,10 +1043,6 @@ body{
 }
 
 @media screen and (max-width:490px) {
-    /*------Header------*/
-    .img-logo{
-        width: 30%;
-    }
     /*contactanos*/
     .titulo-contactanos{
         font-size: 30px;
@@ -1085,10 +1074,6 @@ body{
     /*contactanos*/
     .titulo-contactanos{
         font-size: 30px;
-    }
-    .div-iframe-contactanos iframe{
-        width: 400px;
-        height: 350px;
     }
     .div-nombre-email-contactanos input{
         width: 105%;
@@ -1150,10 +1135,6 @@ body{
     .titulo-querie h2{
         font-size: 25px;
     }
-    /*------Header------*/
-    .img-logo{
-        width: 40%;
-    }
     /*nosotros*/
     #nosotros{
         padding: 4%;
@@ -1181,6 +1162,10 @@ body{
     .div-info-contactanos{
         flex-direction: column;
         align-items: center;
+    }
+    .div-iframe-contactanos iframe{
+        width: 250px;
+        height: 150px;
     }
     /*PRODUCCIONES*/
     .div-titulo-prod h1{

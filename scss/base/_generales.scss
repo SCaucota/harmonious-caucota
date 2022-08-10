@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap'); /*Como llamar: 'Montserrat Alternates', sans-serif;*/ 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');/*Como llamar: 'Playfair Display SC', serif;*/
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/liberation-serif.min.css");/*Como llamar: 'Liberation Serif', sans-serif;*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.icono-flotante{
+    img{
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width:1079px){
+    .icono-flotante{
+        img{
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            bottom: 20px;
+            right: auto;
+        }
+    }
+}

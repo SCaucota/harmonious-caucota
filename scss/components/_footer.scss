@@ -1,0 +1,153 @@
+@import "../base/variables";
+
+.div-footer{
+    background-color: $color-negro;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid $color-rosaviejo;
+    /*Texto izquierda*/
+    .div-conteiner-footer{
+        color: $color-rosaviejo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        .div-texto-footer{
+            padding-bottom: 10px;
+            padding-top: 2%;
+            h3{
+                font-size: 20px;
+                font-family: 'Playfair Display SC', serif;
+                letter-spacing: 3px;
+                border-bottom: 1px solid $color-rosaviejo;
+            }
+            p{
+                font-size: 15px;
+                font-family: 'Playfair Display SC', serif;
+                letter-spacing: 1px;
+            }
+        }
+        .div-info-footer{
+            p{
+                font-size: 18px;
+                color: $color-rosaclarito;
+                font-family: 'Liberation Serif', sans-serif;
+            }
+        }
+    }
+    /*centro*/
+    .div-logo-iconos-footer{
+        .logo-footer{
+        width: 100%;
+        height: 150px;
+        }
+        .div-iconos-footer{
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            img{
+                width: 45px;
+                height: 45px;
+            }
+            &:hover{
+                transform: scale(1.5,1.5);
+                transition-duration: 1s;
+            }
+        }
+    }
+    /*Texto derecha*/
+    .div-horario-footer{
+        color: $color-rosaviejo;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding-top:1%;
+        .div-texto-horario-footer{
+            padding-bottom: 10px;
+            padding-top: 15%;
+            h3{
+                font-size: 20px;
+                font-family: 'Playfair Display SC', serif;
+                letter-spacing: 3px;
+                border-bottom: 1px solid $color-rosaviejo;
+            }
+            p{
+                font-size: 15px;
+                font-family: 'Playfair Display SC', serif;
+                letter-spacing: 1px;
+            }
+        }
+        .div-hora-footer{
+            .dias{
+                font-size: 20px;
+                color: #e6cfcf;
+                font-family: 'Liberation Serif', sans-serif;
+            }
+            .hora{
+                font-size: 15px;
+                font-family: 'Liberation Serif', sans-serif;
+            }
+        }
+    }
+}
+/*Leyenda*/
+.div-leyenda-footer{
+    text-align: center;
+    background-color: $color-negro;
+    color: $color-rosaviejo;
+    font-family: 'Liberation Serif', sans-serif;
+    font-size: 15px;
+    padding-left: 4%;
+}
+
+@media screen and (max-width:1079px){
+    .div-footer{
+        display: grid;
+        height: auto;
+        padding: 5% 0% 5% 4%;
+        .div-conteiner-footer{
+            margin-left: -80%;
+            padding-right: 60%;
+        }
+        .div-logo-iconos-footer{
+            order: -1;
+            padding-bottom: 10%;
+        }
+        .div-horario-footer{
+            margin-right: -80%;
+            padding-left: 60%;
+        }
+    }
+}
+
+@media screen and (max-width:938px){
+    .div-footer{
+        .div-conteiner-footer{
+            margin-left: -10%;
+            padding-right: 0%;
+        }
+        .div-horario-footer{
+            margin-right: -10%;
+            padding-left: 0%;
+        }
+    }
+}
+
+@media screen and (max-width:426px){
+    .div-conteiner-footer{
+        margin-left: -0%;
+        padding-right: 0%;
+    }
+    .div-horario-footer{
+        margin-right: -0%;
+        padding-left: 0%;
+    }
+}
+
+@media screen and (max-width:390px){
+    .div-footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

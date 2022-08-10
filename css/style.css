@@ -1,1119 +1,497 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap'); /*Como llamar: 'Montserrat Alternates', sans-serif;*/ 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');/*Como llamar: 'Playfair Display SC', serif;*/
-@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/liberation-serif.min.css");/*Como llamar: 'Liberation Serif', sans-serif;*/
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap");
+/*Como llamar: 'Montserrat Alternates', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+/*Como llamar: 'Playfair Display SC', serif;*/
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/liberation-serif.min.css");
+/*Como llamar: 'Liberation Serif', sans-serif;*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
 
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
+body {
+  background-color: black; }
 
-/*-------------------Header---------------*/
-.header{
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-}
-.img-logo{
-    width: 10em;
-}
-.menu{
+.icono-flotante img {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+
+@media screen and (max-width: 1079px) {
+  .icono-flotante img {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: auto; } }
+
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  /*boton suscripcion*/
+  /*menu hamburguesa*/
+  /*Sublista menu*/ }
+  .header .menu {
     background-color: black;
-    border-bottom: 1px solid #d9a7a7;
-}
-.menu a{
-    text-decoration: none;
-    color: #d9a7a7;
-    font-family:  'Montserrat Alternates', sans-serif;
-}
-.menu a:hover{
-    color: #e6cfcf;
-    text-decoration: underline;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem;
-}
-/*boton-suscripcion*/
-.div-boton-suscripcion{
-    padding-right: 2%;
-}
-.boton-suscripcion{
-    background: black;
-    padding: 10px 20px;
-    border: 2px solid #d9a7a7;
-    color: #d9a7a7;
-    font-size: 15px;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    font-family:  'Montserrat Alternates', sans-serif;
-}
-.boton-suscripcion:hover{
-    background-color: #d9a7a7;
-    color: black;
-}
-/*menu hamburguesa*/
-.btn-dark{
-    background-color: #d9a7a7;
-}
-.btn-dark:hover{
-    color: #d9a7a7;
-    background-color: #e59393;
-    border-color: 2px solid #d9a7a7;
-}
-/*-----Sub-list menú-----*/
-/*TURNOS*/
-.sublista-turnos{
+    border-bottom: 1px solid #d9a7a7; }
+    .header .menu a {
+      text-decoration: none;
+      color: #d9a7a7;
+      font-family: 'Montserrat Alternates', sans-serif; }
+      .header .menu a:hover {
+        color: #e6cfcf;
+        text-decoration: underline; }
+  .header .img-logo {
+    width: 10em; }
+  .header .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem; }
+  .header .div-boton-suscripcion {
+    padding-right: 2%; }
+    .header .div-boton-suscripcion a {
+      background: black;
+      padding: 10px 20px;
+      border: 2px solid #d9a7a7;
+      color: #d9a7a7;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      font-family: 'Montserrat Alternates', sans-serif; }
+      .header .div-boton-suscripcion a:hover {
+        background-color: #d9a7a7;
+        color: black; }
+  .header .btn-dark {
+    background-color: #d9a7a7; }
+    .header .btn-dark:hover {
+      color: #d9a7a7;
+      background-color: #e59393;
+      border-color: 2px solid #d9a7a7; }
+  .header .sublista-turnos {
     background-color: black;
     border: 1px solid #d9a7a7;
     text-align: center;
-    padding: 2%;
-}
-.sublista-sacar-turnos{
-    border-bottom: 1px solid #d9a7a7;
-}
-/*----------------Main (INDEX)--------------------*/
-/*section1* (nosotros)*/
-#nosotros{
-    background-color: black;
-    height: 600px;
+    padding: 2%; }
+    .header .sublista-turnos .sublista-sacar-turnos {
+      border-bottom: 1px solid #d9a7a7; }
+
+@media screen and (max-width: 1079px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem; }
+  .nav-hamburgesa {
+    background-color: #d9a7a7; }
+  .div-boton-suscripcion {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.div-texto-nosotros{
+    justify-content: center; }
+  .ul-menu {
+    text-align: center; } }
+
+@media screen and (max-width: 988px) {
+  /*-----Sub-list menú-----*/
+  .header .sublista-turnos {
+    border: none; }
+    .header .sublista-turnos .turnos-sublist {
+      border-bottom: none;
+      text-decoration: 3px underline #d9a7a7;
+      padding: 1% 2% 1% 0%; }
+      .header .sublista-turnos .turnos-sublist a {
+        color: #e59393; } }
+
+.div-footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #d9a7a7;
+  /*Texto izquierda*/
+  /*centro*/
+  /*Texto derecha*/ }
+  .div-footer .div-conteiner-footer {
     color: #d9a7a7;
-    border-left: 15px solid;
-}
-.div-texto-nosotros h2{
-    font-size: 40px;
-    text-decoration: underline;
-    padding-inline: 30px;
-    font-family: 'Playfair Display SC', serif;
-}
-.div-texto-nosotros p{
-    font-size: 140%;
-    padding-inline: 30px;
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-.img-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; }
+    .div-footer .div-conteiner-footer .div-texto-footer {
+      padding-bottom: 10px;
+      padding-top: 2%; }
+      .div-footer .div-conteiner-footer .div-texto-footer h3 {
+        font-size: 20px;
+        font-family: 'Playfair Display SC', serif;
+        letter-spacing: 3px;
+        border-bottom: 1px solid #d9a7a7; }
+      .div-footer .div-conteiner-footer .div-texto-footer p {
+        font-size: 15px;
+        font-family: 'Playfair Display SC', serif;
+        letter-spacing: 1px; }
+    .div-footer .div-conteiner-footer .div-info-footer p {
+      font-size: 18px;
+      color: #e6cfcf;
+      font-family: 'Liberation Serif', sans-serif; }
+  .div-footer .div-logo-iconos-footer .logo-footer {
     width: 100%;
-    padding: 3%;
-}
-/*section 2 (servicios)*/
-#servicios{
-    background-color: #d9a7a7;
-    height: auto;
+    height: 150px; }
+  .div-footer .div-logo-iconos-footer .div-iconos-footer {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 2%;
-}
-.img-servicios img{
+    align-content: center; }
+    .div-footer .div-logo-iconos-footer .div-iconos-footer img {
+      width: 45px;
+      height: 45px; }
+    .div-footer .div-logo-iconos-footer .div-iconos-footer:hover {
+      transform: scale(1.5, 1.5);
+      transition-duration: 1s; }
+  .div-footer .div-horario-footer {
+    color: #d9a7a7;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-top: 1%; }
+    .div-footer .div-horario-footer .div-texto-horario-footer {
+      padding-bottom: 10px;
+      padding-top: 15%; }
+      .div-footer .div-horario-footer .div-texto-horario-footer h3 {
+        font-size: 20px;
+        font-family: 'Playfair Display SC', serif;
+        letter-spacing: 3px;
+        border-bottom: 1px solid #d9a7a7; }
+      .div-footer .div-horario-footer .div-texto-horario-footer p {
+        font-size: 15px;
+        font-family: 'Playfair Display SC', serif;
+        letter-spacing: 1px; }
+    .div-footer .div-horario-footer .div-hora-footer .dias {
+      font-size: 20px;
+      color: #e6cfcf;
+      font-family: 'Liberation Serif', sans-serif; }
+    .div-footer .div-horario-footer .div-hora-footer .hora {
+      font-size: 15px;
+      font-family: 'Liberation Serif', sans-serif; }
+
+/*Leyenda*/
+.div-leyenda-footer {
+  text-align: center;
+  background-color: black;
+  color: #d9a7a7;
+  font-family: 'Liberation Serif', sans-serif;
+  font-size: 15px;
+  padding-left: 4%; }
+
+@media screen and (max-width: 1079px) {
+  .div-footer {
+    display: grid;
+    height: auto;
+    padding: 5% 0% 5% 4%; }
+    .div-footer .div-conteiner-footer {
+      margin-left: -80%;
+      padding-right: 60%; }
+    .div-footer .div-logo-iconos-footer {
+      order: -1;
+      padding-bottom: 10%; }
+    .div-footer .div-horario-footer {
+      margin-right: -80%;
+      padding-left: 60%; } }
+
+@media screen and (max-width: 938px) {
+  .div-footer .div-conteiner-footer {
+    margin-left: -10%;
+    padding-right: 0%; }
+  .div-footer .div-horario-footer {
+    margin-right: -10%;
+    padding-left: 0%; } }
+
+@media screen and (max-width: 426px) {
+  .div-conteiner-footer {
+    margin-left: -0%;
+    padding-right: 0%; }
+  .div-horario-footer {
+    margin-right: -0%;
+    padding-left: 0%; } }
+
+@media screen and (max-width: 390px) {
+  .div-footer {
+    display: flex;
+    flex-direction: column; } }
+
+/*--------section 1 (NOSOTROS)---------*/
+#nosotros {
+  background-color: black;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  #nosotros .div-texto-nosotros {
+    color: #d9a7a7;
+    border-left: 15px solid; }
+    #nosotros .div-texto-nosotros h2 {
+      font-size: 40px;
+      text-decoration: underline;
+      padding-inline: 30px;
+      font-family: 'Playfair Display SC', serif; }
+    #nosotros .div-texto-nosotros p {
+      font-size: 140%;
+      padding-inline: 30px;
+      font-family: 'Montserrat Alternates', sans-serif; }
+  #nosotros .img-nosotros {
+    width: 100%;
+    padding: 3%; }
+
+/*-----------section 2 (servicios)---------*/
+#servicios {
+  background-color: #d9a7a7;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2%;
+  /*boton LISTA DE PRECIOS*/ }
+  #servicios .img-servicios img {
     width: 80%;
     height: 100%;
-    border: 10px solid black;
-}
-.div-servicios{
+    border: 10px solid black; }
+  #servicios .div-servicios {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.div-servicios h2{
-    font-size: 40px;
-    color: black;
-    text-decoration: underline;
-    text-align: center;
-    font-family: 'Playfair Display SC', serif;
-    padding-bottom: 8%;
-}
-.boton-mas-servicios{
+    align-items: center; }
+    #servicios .div-servicios h2 {
+      font-size: 40px;
+      color: black;
+      text-decoration: underline;
+      text-align: center;
+      font-family: 'Playfair Display SC', serif;
+      padding-bottom: 8%; }
+    #servicios .div-servicios .accordion {
+      width: 150%; }
+      #servicios .div-servicios .accordion .accordion-item {
+        border: 0px;
+        background-color: #d9a7a7; }
+        #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button {
+          padding-left: 20%;
+          padding-right: 20%;
+          background-color: #d9a7a7; }
+          #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+            background-color: #d9a7a7;
+            color: black;
+            box-shadow: 0 0 0 0.25rem #d9a7a7; }
+          #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem #d9a7a7; }
+        #servicios .div-servicios .accordion .accordion-item .accordion-body {
+          display: flex;
+          flex-direction: column;
+          padding: 0rem 0rem 1rem 2rem; }
+          #servicios .div-servicios .accordion .accordion-item .accordion-body strong {
+            padding-bottom: 5%; }
+  #servicios .boton-mas-servicios {
     padding-top: 15%;
-    padding-bottom: 10%;
-}
-.accordion{
-    width: 150%;
-}
-.accordion-item{
-    border: 0px;
-    background-color: #d9a7a7;
-}
-.accordion-button{
-    padding-left: 20%;
-    padding-right: 20%;
-}
-.accordion-button{
-    background-color: #d9a7a7;
-}
-.accordion-button:not(.collapsed) {
-    background-color: #d9a7a7;
-    color: black;
-}
-.accordion-body{
-    display: flex;
-    flex-direction: column;
-    padding: 0rem 0rem 1rem 2rem;
-}
-.accordion-body strong{
-    padding-bottom: 5%;
-}
-.accordion-button:not(.collapsed) {
-    background-color: #d9a7a7;
-    color: black;
-    box-shadow: 0 0 0 0.25rem #d9a7a7;
-}
-.accordion-button:focus{
-    box-shadow: 0 0 0 0.25rem #d9a7a7;
-}
-/*boton lista de precios*/
-.boton-mas-servicios a{
-    background: #d9a7a7;
-    padding: 11px 32px;
-    border: 2px solid black;
-    color: black;
-    font-size: 20px;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    font-family:  'Montserrat Alternates', sans-serif;
-}
-.boton-mas-servicios a:hover{
-    background-color: black;
-    color: #d9a7a7;
-}
-/*section 3 (producciones)*/
-#producciones{
-    background-color: black;
-    height: auto;
-    padding: 2% 2% 4% 2%;
-}
-.titulo-producciones {
+    padding-bottom: 10%; }
+    #servicios .boton-mas-servicios a {
+      background: #d9a7a7;
+      padding: 11px 32px;
+      border: 2px solid black;
+      color: black;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      font-family: 'Montserrat Alternates', sans-serif; }
+      #servicios .boton-mas-servicios a:hover {
+        background-color: black;
+        color: #d9a7a7; }
+
+/*-----------section 3 (producciones)---------*/
+#producciones {
+  background-color: black;
+  height: auto;
+  padding: 2% 2% 4% 2%;
+  /*boton mas*/ }
+  #producciones .titulo-producciones {
     text-align: left;
     font-size: 40px;
     font-family: 'Playfair Display SC', serif;
     color: #d9a7a7;
     text-decoration: underline;
-    padding-bottom: 3%;
-}
-.div-img-producciones >div{
+    padding-bottom: 3%; }
+  #producciones .div-img-producciones > div {
     padding-bottom: 4%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly 
-}
-.div-img-producciones img{
+    justify-content: space-evenly; }
+  #producciones .div-img-producciones img {
     width: 25%;
-    height: 100%;
-}
-.div-img-producciones img:hover{
-    transform: scale(1.1,1.1);
-    transition-duration: 2s;
-}
-.div-boton-mas-producciones{
+    height: 100%; }
+    #producciones .div-img-producciones img:hover {
+      transform: scale(1.1, 1.1);
+      transition-duration: 2s; }
+  #producciones .div-boton-mas-producciones {
     display: flex;
-    justify-content: center;
-}
-.boton-mas{
-    background: black;
-    padding: 11px 32px;
-    border: 2px solid #d9a7a7;
-    color: #d9a7a7;
-    font-size: 20px;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-.boton-mas:hover{
-    background-color: #d9a7a7;
-    color: black;
-}
-/*section 4 (contactanos)*/
-#contactanos{
-    background-color: #d9a7a7;
-    padding: 2%;
-}
-.titulo-contactanos{
+    justify-content: center; }
+    #producciones .div-boton-mas-producciones .boton-mas {
+      background: black;
+      padding: 11px 32px;
+      border: 2px solid #d9a7a7;
+      color: #d9a7a7;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      font-family: 'Montserrat Alternates', sans-serif; }
+      #producciones .div-boton-mas-producciones .boton-mas:hover {
+        background-color: #d9a7a7;
+        color: black; }
+
+/*------------section 4 (contactanos)---------*/
+#contactanos {
+  background-color: #d9a7a7;
+  padding: 2%; }
+  #contactanos .titulo-contactanos {
     font-size: 40px;
     font-family: 'Playfair Display SC', serif;
     color: black;
     text-decoration: underline;
     padding: 30px;
-    text-align: center;
-}
-.div-container-contactanos{
+    text-align: center; }
+  #contactanos .div-container-contactanos {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-.div-info-contactanos{
-    padding-bottom: 5%;
-    padding-top: 5%;
-    display: flex;
+    align-items: center; }
+    #contactanos .div-container-contactanos .div-info-contactanos {
+      padding-bottom: 5%;
+      padding-top: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #contactanos .div-container-contactanos .div-info-contactanos p {
+        font-size: 12px;
+        font-family: 'Montserrat Alternates', sans-serif; }
+    #contactanos .div-container-contactanos .form-contactanos div {
+      padding-bottom: 1%;
+      /*boton enviar*/ }
+      #contactanos .div-container-contactanos .form-contactanos div .form-row {
+        display: flex;
+        flex-direction: row; }
+        #contactanos .div-container-contactanos .form-contactanos div .form-row .div-nombre {
+          margin-right: 2%; }
+      #contactanos .div-container-contactanos .form-contactanos div .div-asunto-contactanos {
+        margin-bottom: 1%; }
+      #contactanos .div-container-contactanos .form-contactanos div .boton-enviar {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center; }
+        #contactanos .div-container-contactanos .form-contactanos div .boton-enviar a {
+          text-decoration: none;
+          background-color: #d9a7a7;
+          color: black;
+          font-size: 15px;
+          font-family: 'Liberation Serif', sans-serif;
+          border: 1px solid black;
+          padding: 10px 30px; }
+          #contactanos .div-container-contactanos .form-contactanos div .boton-enviar a:hover {
+            background-color: black;
+            color: #d9a7a7; }
+
+@media screen and (max-width: 1298px) {
+  /*nosotros*/
+  .div-texto-nosotros p {
+    font-size: 20px; }
+  /*contactanos*/
+  .div-container-contactanos {
+    flex-direction: column; } }
+
+@media screen and (max-width: 1116px) {
+  /*nosotros*/
+  .div-texto-nosotros h2 {
+    font-size: 35px; } }
+
+@media screen and (max-width: 1079px) {
+  /*nosotros*/
+  #nosotros {
     flex-direction: column;
-    align-items: center;
-}
-.div-info-contactanos p{
-    font-size: 12px;
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-.form-contactanos div{
-    padding-bottom: 1%;
-}
-.form-row{
-    display: flex;
-    flex-direction: row;
-}
-.div-nombre{
-    margin-right: 2%;
-}
-.div-asunto-contactanos{
-    margin-bottom: 1%;
-}
-/*boton enviar*/
-.boton-enviar{
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-}
-.boton-enviar a{
-    text-decoration: none;
-    background-color: #d9a7a7;
-    color: black;
-    font-size: 15px;
-    font-family: 'Liberation Serif', sans-serif;
-    border: 1px solid black;
-    padding: 10px 30px;
-}
-.boton-enviar a:hover{
-    background-color: black;
-    color: #d9a7a7;
-}
-/*Icono Flotante*/
-.icono-flotante img{
-    width: 80px;
-    height: 80px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-/*-----------------------MAIN (Lista de precios)-------------------*/
-.section-img-logo{
-    width: 100%;
-    min-width: 50%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.section-img-logo img{
-    width: 50%;
-    max-width: 50%;
-}
-.section-titulo-principios{
     height: auto;
-    background-color: black;
-    color: #d9a7a7;
-    border-bottom: 1px solid #d9a7a7;
-}
-.titulo-lista-precios h1{
-    margin-bottom: 2%;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 3px;
-    text-decoration: underline;
-}
-.principios-precios li{
-    margin-left: 22%;
-    margin-right: 20%;
-    padding-bottom: 2%;
-    font-size: 20px;
-    font-family: 'Liberation Serif', sans-serif;
-}
-/*precios*/
-.div-conteiner-precios{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly
-}
-.div-conteiner-precios > div{
-    display: inline-block;
-    font-family: 'Liberation Serif', sans-serif;
-    width: 50%;
-}
-.precios{
-    color: #d9a7a7;
-    background-color: black;
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
-.titulo{
-    border: 2px solid #e6cfcf;
-    margin: 0% 20% 2% 20%;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 2px;
-    background-color: black;
-    color: #d9a7a7;
-    font-family: 'Playfair Display SC', serif;
-}
-.table-active{
-    --bs-table-accent-bg: black;
-    color: #d9a7a7;
-}
-.table>:not(caption)>*>* {
-    border-bottom-width: 0px;
-}
-.table{
-    background-color: #d9a7a7;
-    font-size: 20px;
-}
-/*-----------------------MAIN (Producciones)--------------------*/
-.section-hero-prod{
-    background-color: black;
-    display: flex;
+    padding-top: 10%; }
+  /*servicios*/
+  #servicios {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-}
-.div-titulo-prod{
-    width: 50%;
-    color: #d9a7a7;
-    text-align: center;
-    font-family: 'Playfair Display SC', serif;
-    
-}
-.div-titulo-prod h1{
-    font-size: 30px;
-    letter-spacing: 5px;
-    animation-duration: 4s;
-    animation-name: tituloproduccionesh1;
-}
-@keyframes tituloproduccionesh1{
-    from{
-        color: black;
-    }
-    top{
-        color: #d9a7a7;
-    }
-}
-.div-titulo-prod h2{
-    font-size: 50px;
-    letter-spacing: 20px;
-}
-.div-galeria{
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-name: tituloproduccionesh2;
-}
-@keyframes tituloproduccionesh2{
-    0%{
-        color: rgb(190, 148, 190);
-    }
-    25%{
-        color: #e59393;
-    }
-    50%{
-        color: #d9a7a7;
-    }
-    75%{
-        color: #e6cfcf;
-    }
-    100%{
-        color: rgb(190, 148, 190);
-    }
-}
-.grupo-img-1{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 90px 20px;
-    padding: 5% 4% 8% 4%;
-}
-.grupo-img-1 img{
-    width: 100%;
-    height: 100%;
+    height: auto;
+    padding: 5%; }
+    #servicios .img-servicios {
+      display: flex;
+      justify-content: center; }
+    #servicios .div-servicios {
+      order: -2;
+      padding-bottom: 5%; }
+  /*producciones*/
+  #producciones {
+    height: auto; }
+    #producciones .titulo-producciones {
+      text-align: center; }
+    #producciones .div-producciones .div-img-producciones > div {
+      flex-direction: column;
+      align-items: center; }
+    #producciones .div-producciones .div-img-producciones img {
+      padding-bottom: 3%;
+      width: 50%; }
+  /*contactanos*/
+  #contactanos {
+    padding: 2%; }
+    #contactanos .titulo-contactanos {
+      margin: auto; } }
 
-}
-.img4{
-    grid-column: span 3;
-    object-fit: cover
-}
-.img8{
-    grid-column: 1/3;
-}
-/*-------------------MAIN (Suscribete)---------------------*/
-.section-suscribete{
-    background-color: #d9a7a7;
-    padding: 5%;
-}
-.div-titulo-suscribete{
-    color: black;
-    font-family: 'Playfair Display SC', serif;
-    text-align: center;
-    padding-bottom: 5%;
-}
-.div-titulo-suscribete h1{
-    letter-spacing: 5px;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-name: titulosuscribeteh1;
-}
-@keyframes titulosuscribeteh1{
-    0%{
-        font-size: 50px;
-    }
-    50%{
-        font-size: 80px;
-    }
-    100%{
-        font-size: 50px;
-    }
-}
-.div-suscribete-efecto{
-    height: 100px;
-}
-.div-titulo-suscribete h2{
-    font-size: 30px;
-    letter-spacing: 5px;
-}
-.div-beneficios{
-    padding-bottom: 2%;
-    display: flex;
-    justify-content: center;
-}
-.div-beneficios li{
-    padding-bottom: 1%;
-    font-size: 25px;
-    font-family: 'Liberation Serif', sans-serif;
-    text-decoration: underline;
-}
-.div-h3-suscribete{
-    padding-bottom: 4%;
-}
-.div-h3-suscribete h3{
-    text-align: center;
-    font-size: 25px;
-}
-/*form*/
-.form-suscribete>div{
-    display: flex;
-    justify-content: space-evenly;
-}
-.caja-titulo-suscribete{
-    width: 100%;
-    background-color: #e6cfcf;
-    font-family: 'Montserrat Alternates', sans-serif;
-    justify-content: center;
-}
-.div-form-suscribete>div{
-    width: 30%;
-    height: 100%;
-}
-/*boton suscribirme*/
-.boton-suscribirme{
-    padding-top: 3%;
-    display: flex;
-    justify-content: center;
-}
-.boton-suscribirme a{
-    text-decoration: none;
-    background-color: #d9a7a7;
-    color: black;
-    font-size: 20px;
-    font-family: 'Liberation Serif', sans-serif;
-    border: 3px solid black;
-    padding: 10px 30px;
-}
-.boton-suscribirme a:hover{
-    background-color: black;
-    color: #d9a7a7;
-}
-/*-------------------MAIN (Sacar Turnos)---------------------*/
-.section-sacar-turno{
-    background-color: black;
-    color: #d9a7a7;
-    text-align: center;
-    padding-bottom: 3%;   
-}
-.titulo-sacar-turno{
-    padding: 2%;
-    text-align: left;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 3px;
-}
-.titulo-sacar-turno h1{
-    font-size: 30px;
-    text-decoration: underline;
-}
-.titulo-sacar-turno h2{
+@media screen and (max-width: 660px) {
+  /*contactanos*/
+  .div-iframe-contactanos iframe {
+    width: 550px;
+    height: 350px; } }
+
+@media screen and (max-width: 609px) {
+  /*contactanos*/
+  .titulo-contactanos {
+    font-size: 35px; }
+  .div-iframe-contactanos iframe {
+    width: 500px;
+    height: 300px; }
+  .div-info-contactanos p {
+    padding-bottom: 3%;
+    font-size: 15px; } }
+
+@media screen and (max-width: 525px) {
+  #contactanos .div-container-contactanos .div-iframe-contactanos iframe {
+    width: 450px;
+    height: 300px; }
+  #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos .form-row {
+    flex-direction: column; }
+    #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos .form-row .div-nombre {
+      margin-right: 0%; } }
+
+@media screen and (max-width: 490px) {
+  /*contactanos*/
+  #contactanos .titulo-contactanos {
+    font-size: 30px; }
+  #contactanos .div-container-contactanos .div-iframe-contactanos iframe {
+    width: 400px;
+    height: 300px; } }
+
+@media screen and (max-width: 426px) {
+  #nosotros .titulo-querie h2 {
+    font-size: 25px; }
+  #servicios .titulo-querie h2 {
+    font-size: 25px; }
+  #producciones .titulo-querie h2 {
+    font-size: 25px; }
+  #contactanos .titulo-querie {
+    font-size: 25px; }
+  #contactanos .div-container-contactanos .div-iframe-contactanos iframe {
+    width: 250px;
+    height: 150px; } }
+
+@media screen and (max-width: 390px) {
+  /*nosotros*/
+  .div-texto-nosotros p {
+    font-size: 15px; }
+  #servicios .div-servicios .accordion {
+    width: 100%; }
+  #servicios .boton-mas-servicios a {
     font-size: 15px;
-}
-/*form*/
-.div-radio-form > div{
-    display: inline-block;
-    padding: 2%;
-}
-.div-radio-form label{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 20px;
-}
-.form-check-input:checked {
-    background-color: #e59393;
-    border-color: #e59393;
-}
-.input-group{
-    width: 40%;
-}
-.caja-titulo-sacar-turno{
-    width: 100%;
-    background-color: #e6cfcf;
-    font-family: 'Montserrat Alternates', sans-serif;
-    justify-content: center;
-}
-.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0rem;
-    border-bottom-left-radius: 0rem;
-}
-.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
-    margin-left: 0px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0.25rem;
-    border-top-right-radius: 0;
-}
-.div-option-form{
-    padding: 2%;
-}
-.div-option-form select{
-    border: 3px solid #d9a7a7;
-}
-.div-option-form input{
-    border: 3px solid #d9a7a7;
-}
-.div-terminos p{
-    font-size: 20px;
-    font-family: 'Liberation Serif', sans-serif;
-    padding-top: 2%;
-}
-.div-check-terminos-sacar-turno{
-    padding: 0% 30% 2% 30%;
-    text-align: left;
-}
-.boton-reservar-turno a{
-    text-decoration: none;
-    background-color: #d9a7a7;
-    color: black;
-    font-size: 20px;
-    font-family: 'Liberation Serif', sans-serif;
-    border: 3px solid black;
-    padding: 10px 30px;
-}
-.boton-reservar-turno a:hover{
-    background-color: black;
-    color: #d9a7a7;
-    border: 2px solid #d9a7a7;
-}
-/*-------------------MAIN (Mis Turnos)---------------------*/
-.section-mis-turnos{
-    background-color: #d9a7a7;
-    color: black;
-    padding-bottom: 1%; 
-    padding-top: 4%;
-}
-.div-titulo-mis-turnos{
-    text-align: center;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 3px;
-}
-.div-titulo-mis-turnos h1{
-    font-size: 40px;
-    text-decoration: underline;
-}
-.div-titulo-mis-turnos h2{
+    padding: 8px 20px; }
+  /*producciones*/
+  .div-boton-mas-producciones a {
     font-size: 15px;
-}
-.div-mis-turnos{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-.card{
-    background-color: #d9a7a7;
-}
-.card-header{
-    background-color: black;
-    color: #e6cfcf;
-    text-align: center;
-}
-.card-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/*-------------------------FOOTER-------------------------*/
-body{
-    background-color: black;
-}
-.div-footer{
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-top: 1px solid #d9a7a7;
-}
-/*centro*/
-.logo-footer{
-    width: 100%;
-    height: 150px;
-}
-.div-iconos-footer img{
-    width: 45px;
-    height: 45px;
-}
-.div-iconos-footer img:hover{
-    transform: scale(1.5,1.5);
-    transition-duration: 1s;
-}
-.div-iconos-footer{
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-}
-/*Texto izquierda*/
-.div-conteiner-footer{
-    color: #d9a7a7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-}
-.div-texto-footer{
-    padding-bottom: 10px;
-    padding-top: 2%;
-}
-.div-texto-footer h3{
-    font-size: 20px;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 3px;
-    border-bottom: 1px solid #d9a7a7;
-}
-.div-texto-footer p{
-    font-size: 15px;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 1px;
-}
-.div-info-footer p{
-    font-size: 18px;
-    color: #e6cfcf;
-    font-family: 'Liberation Serif', sans-serif;
-}
-/*Texto derecha*/
-.div-horario-footer{
-    color: #d9a7a7;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    padding-top:1%;
-}
-.div-texto-horario-footer{
-    padding-bottom: 10px;
-    padding-top: 15%;
-}
-.div-texto-horario-footer h3{
-    font-size: 20px;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 3px;
-    border-bottom: 1px solid #d9a7a7;
-}
-.div-texto-horario-footer p{
-    font-size: 15px;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 1px;
-}
-.dias{
-    font-size: 20px;
-    color: #e6cfcf;
-    font-family: 'Liberation Serif', sans-serif;
-}
-.hora{
-    font-size: 15px;
-    font-family: 'Liberation Serif', sans-serif;
-}
-/*Leyenda*/
-.div-leyenda-footer{
-    text-align: center;
-    background-color: black;
-    color: #d9a7a7;
-    font-family: 'Liberation Serif', sans-serif;
-    font-size: 15px;
-    padding-left: 4%;
-}
-/*-------------------------------------MEDIA QUERIES------------------------------------*/
-/*INDEX*/
-
-@media screen and (max-width:1298px) {
-    /*nosotros*/
-    .div-texto-nosotros p{
-        font-size: 20px;
-    }
-    /*contactanos*/
-    .div-container-contactanos{
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:1116px) {
-    /*nosotros*/
-    .div-texto-nosotros h2{
-        font-size: 35px;
-    }
-    /*LISTA DE PRECIOS*/
-    .titulo-lista-precios h1{
-        font-size: 30px;
-    }
-}
-@media screen and (max-width:1079px) {
-    /*nav*/
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-    }
-    .nav-hamburgesa{
-        background-color: #d9a7a7;
-    }
-    .div-boton-suscripcion{
-        display: flex;
-        justify-content: center;
-    }
-    .ul-menu{
-        text-align: center;
-    }
-    /*nosotros*/
-    #nosotros{
-        flex-direction: column;
-        height: auto;
-        padding-top: 10%;
-    }
-    /*servicios*/
-    #servicios{
-        flex-direction: column;
-        height: auto;
-        padding: 5%;
-    }
-    .img-servicios{
-        display: flex;
-        justify-content: center;
-    }
-    .div-servicios{
-        order:-2;
-        padding-bottom: 5%;
-    }
-    /*producciones*/
-    #producciones{
-        height: auto;
-    }
-    .titulo-producciones{
-        text-align: center;
-    }
-    .div-img-producciones >div{
-        flex-direction: column;
-        align-items: center;
-    }
-    .div-img-producciones img{
-        padding-bottom: 3%;
-        width: 50%;
-    }
-    /*contactanos*/
-    #contactanos{
-        padding: 2%;
-    }
-    .titulo-contactanos{
-        margin: auto;
-    }
-    /*footer*/
-    .div-footer{
-        display: grid;
-        height: auto;
-        padding: 5% 0% 5% 4%;
-    }
-    .div-logo-iconos-footer{
-        order: -1;
-        padding-bottom: 10%;
-    }
-    .div-conteiner-footer{
-        margin-left: -80%;
-        padding-right: 60%;
-    }
-    .div-horario-footer{
-        margin-right: -80%;
-        padding-left: 60%;
-    }
-    /*iconoflotante*/
-    .icono-flotante img{
-        width: 80px;
-        height: 80px;
-        position: fixed;
-        bottom: 20px;
-        right: auto;
-    }
-}
-
-@media screen and (max-width:988px) {
-    /*-----Sub-list menú-----*/
-    /*TURNOS*/
-    .sublista-turnos{
-        border: none;
-    }
-    .turnos-sublist{
-        border-bottom: none;
-        text-decoration: 3px underline #d9a7a7;
-        padding: 1% 2% 1% 0%;
-    }
-    .turnos-sublist a{
-        color: #e59393;
-    }
-}
-
-@media screen and (max-width:938px) {
-    /*LISTA DE PRECIOS*/
-    /*titulo*/
-    .titulo-lista-precios h1{
-        font-size: 20px;
-    }
-    /*SACARTURNOS*/
-    .div-radio-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    /*SUSCRIBETE*/
-    .div-label-nacimiento{
-        padding-right: 35%;
-    }
-    .div-mis-turnos{
-        flex-direction: column;
-    }
-    /*footer*/
-    .div-conteiner-footer{
-        margin-left: -10%;
-        padding-right: 0%;
-    }
-    .div-horario-footer{
-        margin-right: -10%;
-        padding-left: 0%;
-    }
-}
-
-
-@media screen and (max-width:734px) {
-    /*SACARTURNOS*/
-    .titulo-sacar-turno{
-        text-align: center;
-        padding-bottom: 4%;
-    }
-    /*PRODUCCIONES*/
-    .div-titulo-prod h1{
-        font-size: 190%;
-    }
-    .div-titulo-prod h2{
-        font-size: 300%;
-    }
-    .img1parte{
-        grid-column: 1/4;
-    }
-    .img3parte{
-        grid-column: 1/4;
-    }
-}
-
-@media screen and (max-width:660px) {
-    /*contactanos*/
-    .div-iframe-contactanos iframe{
-        width: 550px;
-        height: 350px;
-    }
-    /*SUSCRIBIRME*/
-    .form-suscribete>div{
-        flex-direction: column;
-        align-items: center;
-    }
-    .form-suscribete input{
-        height: 50px;
-    }
-    .div-form-suscribete>div{
-        padding-bottom: 1%;
-        width: 44%;
-    }
-    .div-block-turnos h3{
-        padding-bottom: 10%;
-    }
-    .div-titulo-suscribete h2{
-        font-size: 25px;
-    }
-    .div-suscribete-efecto{
-        height: 50px;
-    }
-    @keyframes titulosuscribeteh1{
-        0%{
-            font-size: 40px;
-        }
-        50%{
-            font-size: 50px;
-        }
-        100%{
-            font-size: 40px;
-        }
-    }
-}
-
-@media screen and (max-width:609px) {
-    /*contactanos*/
-    .titulo-contactanos{
-        font-size: 35px;
-    }
-    .div-iframe-contactanos iframe{
-        width: 500px;
-        height: 300px;
-    }
-    .div-info-contactanos p{
-        padding-bottom: 3%;
-        font-size: 15px;
-    }
-    /*SUSCRIBETE*/
-    .div-beneficios{
-        padding-left: 5%;
-    }
-}
-
-@media screen and (max-width:525px) {
-    /*contactanos*/
-    .div-iframe-contactanos iframe{
-        width: 450px;
-        height: 300px;
-    }
-    .form-row{
-        display: flex;
-        flex-direction: column;
-    }
-    .div-nombre{
-        margin-right: 0%;
-    }
-    /*TURNOS*/
-    .div-titulo-turnos h1{
-        font-size: 35px;
-    }
-    .div-titulo-turnos h2{
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:490px) {
-    /*contactanos*/
-    .titulo-contactanos{
-        font-size: 30px;
-    }
-    .div-iframe-contactanos iframe{
-        width: 400px;
-        height: 300px;
-    }
-    /*PRODUCCIONES*/
-    .div-titulo-prod h1{
-        font-size: 150%;
-    }
-    .div-titulo-prod h2{
-        font-size: 250%;
-    }
-    /*SACARTURNOS*/
-    .div-terminos p{
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width:426px) {
-    /*contactanos*/
-    .titulo-contactanos{
-        font-size: 25px;
-    }
-    .div-iframe-contactanos iframe{
-        width: 250px;
-        height: 150px;
-    }
-    /*LISTA DE PRECIOS*/
-    /*titulo*/
-    .section-titulo-principios{
-        height: auto;
-        padding-bottom: 5%;
-    }
-    .titulo-lista-precios h1{
-        font-size: 15px;
-    }
-    .principios-precios li{
-        font-size: 15px;
-    }
-    /*precios*/
-    .titulo h2{
-        font-size: 20px;
-    }
-    /*SUSCRIBETE*/
-    .div-titulo-suscribete h1{
-        font-size: 35px;
-    }
-    .div-titulo-suscribete h2{
-        font-size: 25px;
-    }
-    .div-beneficios ul li{
-        font-size: 22px;
-    }
-    .div-suscribete-efecto{
-        height: 40px;
-    }
-    @keyframes titulosuscribeteh1{
-        0%{
-            font-size: 25px;
-        }
-        50%{
-            font-size: 30px;
-        }
-        100%{
-            font-size: 25px;
-        }
-    }
-    /*footer*/
-    .div-conteiner-footer{
-        margin-left: -0%;
-        padding-right: 0%;
-    }
-    .div-horario-footer{
-        margin-right: -0%;
-        padding-left: 0%;
-    }
-}
-
-@media screen and (max-width:390px) {
-    .titulo-querie h2{
-        font-size: 25px;
-    }
-    /*nosotros*/
-    .div-texto-nosotros p{
-        font-size: 15px;
-    }
-    /*servicios*/
-    .boton-mas-servicios a{
-        font-size: 15px;
-        padding: 8px 20px;
-    }
-    /*producciones*/
-    .div-boton-mas-producciones a{
-        font-size: 15px;
-        padding: 8px 20px;
-    }
-    /*PRODUCCIONES*/
-    .div-titulo-prod h1{
-        font-size: 100%;
-    }
-    .div-titulo-prod h2{
-        font-size: 200%;
-    }
-}
+    padding: 8px 20px; } }

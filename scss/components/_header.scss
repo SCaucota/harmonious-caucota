@@ -1,0 +1,104 @@
+@import "../base/variables";
+
+.header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    .menu {
+        background-color: $color-negro;
+        border-bottom: 1px solid $color-rosaviejo;
+        a {
+            text-decoration: none;
+            color: $color-rosaviejo;
+            font-family: 'Montserrat Alternates', sans-serif;
+            &:hover {
+                color: $color-rosaclarito;
+                text-decoration: underline;
+            }
+        }
+    }
+    .img-logo{
+        width: 10em;
+    }
+    .navbar-expand-lg{
+        .navbar-nav{
+            .nav-link{
+                padding-right: 2rem;
+            }
+        }
+    }
+    /*boton suscripcion*/
+    .div-boton-suscripcion{
+        padding-right: 2%;
+        a{
+            background: $color-negro;
+            padding: 10px 20px;
+            border: 2px solid $color-rosaviejo;
+            color: $color-rosaviejo;
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            font-family:  'Montserrat Alternates', sans-serif;
+            &:hover{
+                background-color: $color-rosaviejo;
+                color: $color-negro;
+            }
+        }
+    }
+    /*menu hamburguesa*/
+    .btn-dark{
+        background-color: $color-rosaviejo;
+        &:hover{
+            color: $color-rosaviejo;
+            background-color: $color-rosafuerte;
+            border-color: 2px solid $color-rosaviejo;
+        }
+    }
+    /*Sublista menu*/
+    .sublista-turnos{
+        background-color: $color-negro;
+        border: 1px solid $color-rosaviejo;
+        text-align: center;
+        padding: 2%;
+        .sublista-sacar-turnos{
+            border-bottom: 1px solid $color-rosaviejo;
+        }
+    }
+}
+
+@media screen and (max-width:1079px) {
+    .navbar-expand-lg{
+        .navbar-nav{
+            .nav-link {
+                padding-right: 1rem;
+            }
+        }
+    }
+    .nav-hamburgesa{
+        background-color: $color-rosaviejo;
+    }
+    .div-boton-suscripcion{
+        display: flex;
+        justify-content: center;
+    }
+    .ul-menu{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:988px) {
+    /*-----Sub-list menú-----*/
+    .header{
+        .sublista-turnos{
+            border: none;
+            .turnos-sublist{
+                border-bottom: none;
+                text-decoration: 3px underline $color-rosaviejo;
+                padding: 1% 2% 1% 0%;
+                a{
+                    color: $color-rosafuerte;
+                }
+            }
+        }
+    }
+}

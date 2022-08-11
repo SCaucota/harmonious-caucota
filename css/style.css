@@ -495,27 +495,3 @@ body {
   .div-boton-mas-producciones a {
     font-size: 15px;
     padding: 8px 20px; } }
-
-.section-img-logo {
-  width: 100%;
-  min-width: 50%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .section-img-logo img {
-    width: 50%;
-    max-width: 50%; }
-
-.section-titulo-principios {
-  height: auto;
-  background-color: black;
-  color: #d9a7a7;
-  border-bottom: 1px solid #d9a7a7; }
-  .section-titulo-principios .titulo-lista-precios h1 {
-    margin-bottom: 2%;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 3px;
-    text-decoration: underline; }

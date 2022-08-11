@@ -140,9 +140,9 @@ body {
     .div-footer .div-logo-iconos-footer .div-iconos-footer img {
       width: 45px;
       height: 45px; }
-    .div-footer .div-logo-iconos-footer .div-iconos-footer:hover {
-      transform: scale(1.5, 1.5);
-      transition-duration: 1s; }
+      .div-footer .div-logo-iconos-footer .div-iconos-footer img:hover {
+        transform: scale(1.5, 1.5);
+        transition-duration: 1s; }
   .div-footer .div-horario-footer {
     color: #d9a7a7;
     display: flex;

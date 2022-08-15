@@ -1,14 +1,14 @@
 @import "../base/variables";
 
 .div-footer{
-    background-color: $color-negro;
+    background-color: $color-secundario;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px solid $color-rosaviejo;
+    border-top: 1px solid $color-principal;
     /*Texto izquierda*/
     .div-conteiner-footer{
-        color: $color-rosaviejo;
+        color: $color-principal;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,7 +20,7 @@
                 font-size: 20px;
                 font-family: 'Playfair Display SC', serif;
                 letter-spacing: 3px;
-                border-bottom: 1px solid $color-rosaviejo;
+                border-bottom: 1px solid $color-principal;
             }
             p{
                 font-size: 15px;
@@ -31,7 +31,7 @@
         .div-info-footer{
             p{
                 font-size: 18px;
-                color: $color-rosaclarito;
+                color: #e6cfcf;
                 font-family: 'Liberation Serif', sans-serif;
             }
         }
@@ -58,7 +58,7 @@
     }
     /*Texto derecha*/
     .div-horario-footer{
-        color: $color-rosaviejo;
+        color: $color-principal;
         display: flex;
         flex-direction: column;
         text-align: right;
@@ -70,7 +70,7 @@
                 font-size: 20px;
                 font-family: 'Playfair Display SC', serif;
                 letter-spacing: 3px;
-                border-bottom: 1px solid $color-rosaviejo;
+                border-bottom: 1px solid $color-principal;
             }
             p{
                 font-size: 15px;
@@ -94,8 +94,8 @@
 /*Leyenda*/
 .div-leyenda-footer{
     text-align: center;
-    background-color: $color-negro;
-    color: $color-rosaviejo;
+    background-color: $color-secundario;
+    color: $color-principal;
     font-family: 'Liberation Serif', sans-serif;
     font-size: 15px;
     padding-left: 4%;

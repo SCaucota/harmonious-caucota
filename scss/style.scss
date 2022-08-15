@@ -6,19 +6,17 @@
 /*-----------------INDEX-----------------*/
 /*--section 1 (NOSOTROS)--*/
 #nosotros{
-    background-color: $color-negro;
+    background-color: $color-secundario;
     height: 600px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     .div-texto-nosotros{
-        color: $color-rosaviejo;
+        color: $color-principal;
         border-left: 15px solid;
         h2{
-            font-size: 40px;
-            text-decoration: underline;
+            @extend %subtitulos-index;
             padding-inline: 30px;
-            font-family: 'Playfair Display SC', serif;
         }
         p{
             font-size: 140%;
@@ -33,7 +31,7 @@
 }
 /*--section 2 (servicios)--*/
 #servicios{
-    background-color: $color-rosaviejo;
+    background-color: $color-principal;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -41,40 +39,35 @@
     padding: 2%;
     .img-servicios{
         img{
-            width: 80%;
-            height: 100%;
-            border: 10px solid $color-negro;
+            @include sizeimg (80%, 100%);
+            border: 10px solid $color-secundario;
         }
     }
     .div-servicios{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %flex-column-center;
         h2{
-            font-size: 40px;
-            color: $color-negro;
-            text-decoration: underline;
+            @extend %subtitulos-index;
+            color: $color-secundario;
             text-align: center;
-            font-family: 'Playfair Display SC', serif;
             padding-bottom: 8%;
         }
         .accordion{
             width: 150%;
             .accordion-item{
                 border: 0px;
-                background-color: $color-rosaviejo;
+                background-color: $color-principal;
                 .accordion-header{
                     .accordion-button{
                         padding-left: 20%;
                         padding-right: 20%;
-                        background-color: $color-rosaviejo;
+                        background-color: $color-principal;
                         &:not(.collapsed) {
-                            background-color: $color-rosaviejo;
-                            color: $color-negro;
-                            box-shadow: 0 0 0 0.25rem $color-rosaviejo;
+                            background-color: $color-principal;
+                            color: $color-secundario;
+                            box-shadow: 0 0 0 0.25rem $color-principal;
                         }
                         &:focus{
-                            box-shadow: 0 0 0 0.25rem $color-rosaviejo;
+                            box-shadow: 0 0 0 0.25rem $color-principal;
                         }
                         &::after{
                             background-image: url(../img/plus.png);
@@ -94,35 +87,32 @@
     }
     /*boton LISTA DE PRECIOS*/
     .boton-mas-servicios{
-        padding-top: 15%;
-        padding-bottom: 10%;
+        @include padding-tyb (15%, 10%);
         a{
-            background: $color-rosaviejo;
-            padding: 11px 32px;
-            border: 2px solid $color-negro;
-            color: $color-negro;
-            font-size: 20px;
-            letter-spacing: 1.5px;
-            text-decoration: none;
-            font-family:  'Montserrat Alternates', sans-serif;
+            background: map-get($botones , color2 );
+            padding: map-get($botones , padding-bottom );
+            border: map-get($botones , border2 );
+            color: map-get($botones , color-texto2 );
+            font-size: map-get($botones , t-letra );
+            letter-spacing: map-get($botones , sp-letras );
+            text-decoration: map-get($botones , underline-text );
+            font-family:  map-get($botones , estilo-letra );
             &:hover{
-                background-color: $color-negro;
-                color: $color-rosaviejo;
+                background-color: $color-secundario;
+                color: $color-principal;
             }
         }
     }
 }
 /*---section 3 (producciones)--*/
 #producciones{
-    background-color: $color-negro;
+    background-color: $color-secundario;
     height: auto;
     padding: 2% 2% 4% 2%;
     .titulo-producciones {
+        @extend %subtitulos-index;
         text-align: left;
-        font-size: 40px;
-        font-family: 'Playfair Display SC', serif;
-        color: $color-rosaviejo;
-        text-decoration: underline;
+        color: $color-principal;
         padding-bottom: 3%;
     }
     .div-img-producciones{
@@ -133,8 +123,7 @@
             justify-content: space-evenly;
         }
         img{
-            width: 25%;
-            height: 100%;
+            @include sizeimg (25%, 100%);
             &:hover{
                 transform: scale(1.1,1.1);
                 transition-duration: 2s;
@@ -146,30 +135,28 @@
         display: flex;
         justify-content: center;
         .boton-mas{
-            background: $color-negro;
-            padding: 11px 32px;
-            border: 2px solid $color-rosaviejo;
-            color: $color-rosaviejo;
-            font-size: 20px;
-            letter-spacing: 1.5px;
-            text-decoration: none;
-            font-family: 'Montserrat Alternates', sans-serif;
+            background: map-get($botones , color1 );
+            padding: map-get($botones , padding-bottom );
+            border: map-get($botones , border1 );
+            color: map-get($botones , color-texto1 );
+            font-size: map-get($botones , t-letra );
+            letter-spacing: map-get($botones , sp-letras );
+            text-decoration: map-get($botones , underline-text );
+            font-family:  map-get($botones , estilo-letra );
             &:hover{
-                background-color: $color-rosaviejo;
-                color: $color-negro;
+                background-color: $color-principal;
+                color: $color-secundario;
             }
         }
     }
 }
 /*--section 4 (contactanos)--*/
 #contactanos{
-    background-color: $color-rosaviejo;
+    background-color: $color-principal;
     padding: 2%;
     .titulo-contactanos{
-        font-size: 40px;
-        font-family: 'Playfair Display SC', serif;
-        color: $color-negro;
-        text-decoration: underline;
+        @extend %subtitulos-index;
+        color: $color-secundario;
         padding: 30px;
         text-align: center;
     }
@@ -178,11 +165,8 @@
         justify-content: space-around;
         align-items: center;
         .div-info-contactanos{
-            padding-bottom: 5%;
-            padding-top: 5%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include padding-tyb (5%, 5%);
+            @extend %flex-column-center;
             p{
                 font-size: 12px;
                 font-family: 'Montserrat Alternates', sans-serif;
@@ -207,16 +191,17 @@
                     display: flex;
                     justify-content: center;
                     a{
-                        text-decoration: none;
-                        background-color: $color-rosaviejo;
-                        color: $color-negro;
-                        font-size: 15px;
-                        font-family: 'Liberation Serif', sans-serif;
-                        border: 1px solid $color-negro;
-                        padding: 10px 30px;
+                        background: map-get($botones , color2 );
+                        padding: map-get($botones , padding-bottom-form );
+                        border: map-get($botones , border2 );
+                        color: map-get($botones , color-texto2 );
+                        font-size: map-get($botones , t-letra-form );
+                        letter-spacing: map-get($botones , sp-letras );
+                        text-decoration: map-get($botones , underline-text );
+                        font-family:  map-get($botones , estilo-letra-form );
                         &:hover{
-                            background-color: $color-negro;
-                            color: $color-rosaviejo;
+                            background-color: $color-secundario;
+                            color: $color-principal;
                         }
                     }
                 }
@@ -229,7 +214,7 @@
 .section-img-logo{
     width: 100%;
     min-width: 50%;
-    background-color: black;
+    background-color: $color-secundario;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,9 +225,9 @@
 }
 .section-titulo-principios{
     height: auto;
-    background-color: black;
-    color: #d9a7a7;
-    border-bottom: 1px solid #d9a7a7;
+    background-color: $color-secundario;
+    color: $color-principal;
+    border-bottom: 1px solid $color-principal;
     .titulo-lista-precios{
         h1{
             margin-bottom: 2%;
@@ -264,18 +249,17 @@
     }
 }
 .precios{
-    color: #d9a7a7;
-    background-color: black;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    color: $color-principal;
+    background-color: $color-secundario;
+    @include padding-tyb (4%, 4%);
     .titulo{
         border: 2px solid #e6cfcf;
         margin: 0% 20% 2% 20%;
         text-align: center;
         font-size: 15px;
         letter-spacing: 2px;
-        background-color: black;
-        color: #d9a7a7;
+        background-color: $color-secundario;
+        color: $color-principal;
         font-family: 'Playfair Display SC', serif;
         h2{
             margin-bottom: 0rem;
@@ -290,14 +274,14 @@
             font-family: 'Liberation Serif', sans-serif;
             width: 50%;
             .table{
-                background-color: #d9a7a7;
+                background-color: $color-principal;
                 font-size: 20px;
                 >:not(caption)>*>* {
                     border-bottom-width: 0px;
                 }
                 .table-active{
-                    --bs-table-accent-bg: black;
-                    color: #d9a7a7;
+                    --bs-table-accent-bg: $color-secundario;
+                    color: $color-principal;
                 }
             }
         }
@@ -306,14 +290,12 @@
 
 /*-----------------PRODUCCIONES----------------*/
 .section-hero-prod{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
+    background-color: $color-secundario;
+    @extend %flex-column-center;
     justify-content: center;
-    align-items: center;
     padding-top: 5%;
     .div-titulo-prod{
-        color: #d9a7a7;
+        color: $color-principal;
         text-align: center;
         font-family: 'Playfair Display SC', serif;
         h1{
@@ -323,10 +305,10 @@
             animation-name: tituloproduccionesh1;
             @keyframes tituloproduccionesh1{
                 from{
-                    color: black;
+                    color: $color-secundario;
                 }
                 top{
-                    color: #d9a7a7;
+                    color: $color-principal;
                 }
             }
         }
@@ -342,7 +324,7 @@
                     color: #e59393;
                 }
                 50%{
-                    color: #d9a7a7;
+                    color: $color-principal;
                 }
                 75%{
                     color: #e6cfcf;
@@ -365,8 +347,7 @@
         padding: 5% 4% 8% 4%;
         .img-producciones{
             img{
-                width: 100%;
-                height: 100%;
+                @include sizeimg (100%, 100%);
             }
         }
         .img4{
@@ -381,10 +362,10 @@
 
 /*-----------------SUSCRIBETE----------------*/
 .section-suscribete{
-    background-color: #d9a7a7;
+    background-color: $color-principal;
     padding: 5%;
     .div-titulo-suscribete{
-        color: black;
+        color: $color-secundario;
         font-family: 'Playfair Display SC', serif;
         text-align: center;
         padding-bottom: 5%;
@@ -457,15 +438,15 @@
         justify-content: center;
         a{
             text-decoration: none;
-            background-color: #d9a7a7;
-            color: black;
+            background-color: $color-principal;
+            color: $color-secundario;
             font-size: 20px;
             font-family: 'Liberation Serif', sans-serif;
-            border: 3px solid black;
+            border: 3px solid $color-secundario;
             padding: 10px 30px;
             &:hover{
-                background-color: black;
-                color: #d9a7a7;
+                background-color: $color-secundario;
+                color: $color-principal;
             }
         }
     }
@@ -473,8 +454,8 @@
 
 /*-----------------SACAR TURNO----------------*/
 .section-sacar-turno{
-    background-color: black;
-    color: #d9a7a7;
+    background-color: $color-secundario;
+    color: $color-principal;
     text-align: center;
     padding-bottom: 3%;
     .titulo-sacar-turno{
@@ -526,10 +507,10 @@
                     border-top-right-radius: 0;
                 }
                 select{
-                    border: 3px solid #d9a7a7;
+                    border: 3px solid $color-principal;
                 }
                 input{
-                    border: 3px solid #d9a7a7;
+                    border: 3px solid $color-principal;
                 }
                 .caja-titulo-sacar-turno{
                     width: 100%;
@@ -555,16 +536,16 @@
     .boton-reservar-turno{
         a{
             text-decoration: none;
-            background-color: #d9a7a7;
-            color: black;
+            background-color: $color-principal;
+            color: $color-secundario;
             font-size: 20px;
             font-family: 'Liberation Serif', sans-serif;
-            border: 3px solid black;
+            border: 3px solid $color-secundario;
             padding: 10px 30px;
             &:hover{
-                background-color: black;
-                color: #d9a7a7;
-                border: 2px solid #d9a7a7;
+                background-color: $color-secundario;
+                color: $color-principal;
+                border: 2px solid $color-principal;
             }
         }
     }
@@ -572,10 +553,9 @@
 
 /*-----------------MIS TURNOS----------------*/
 .section-mis-turnos{
-    background-color: #d9a7a7;
-    color: black;
-    padding-bottom: 1%; 
-    padding-top: 4%;
+    background-color: $color-principal;
+    color: $color-secundario;
+    @include padding-tyb (4%, 1%);
     .div-titulo-mis-turnos{
         text-align: center;
         font-family: 'Playfair Display SC', serif;
@@ -592,19 +572,16 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        @include padding-tyb (5%, 5%);
         .card{
-            background-color: #d9a7a7;
+            background-color: $color-principal;
             .card-header{
-                background-color: black;
+                background-color: $color-secundario;
                 color: #e6cfcf;
                 text-align: center;
             }
             .card-body{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @extend %flex-column-center;
             }
         }
     }
@@ -1021,10 +998,9 @@
     }
     /*-----LISTA DE PRECIOS-----*/
     .precios{
-        color: #d9a7a7;
-        background-color: black;
-        padding-top: 4%;
-        padding-bottom: 4%;
+        color: $color-principal;
+        background-color: $color-secundario;
+        @include padding-tyb (4%, 4%);
         .titulo{
             border: 2px solid #e6cfcf;
             margin: 0% 10% 2% 10%;

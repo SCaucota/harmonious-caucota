@@ -5,15 +5,23 @@
     top: 0px;
     z-index: 100;
     .menu {
-        background-color: $color-negro;
-        border-bottom: 1px solid $color-rosaviejo;
-        a {
+        background-color: $color-secundario;
+        border-bottom: 1px solid $color-principal;
+        .nav-link {
             text-decoration: none;
-            color: $color-rosaviejo;
+            color: $color-principal;
             font-family: 'Montserrat Alternates', sans-serif;
             &:hover {
-                color: $color-rosaclarito;
+                color: #e6cfcf;
                 text-decoration: underline;
+            }
+        }
+        .dropdown-item{
+            text-decoration: none;
+            color: $color-principal;
+            font-family: 'Montserrat Alternates', sans-serif;
+            &:hover {
+                color: #e6cfcf;
             }
         }
     }
@@ -31,37 +39,37 @@
     .div-boton-suscripcion{
         padding-right: 2%;
         a{
-            background: $color-negro;
-            padding: 10px 20px;
-            border: 2px solid $color-rosaviejo;
-            color: $color-rosaviejo;
-            font-size: 15px;
-            letter-spacing: 1.5px;
-            text-decoration: none;
-            font-family:  'Montserrat Alternates', sans-serif;
+            background: map-get($botones , color1 );
+            padding: map-get($botones , padding-bottom-menu );
+            border: map-get($botones , border1 );
+            color: map-get($botones , color-texto1 );
+            font-size: map-get($botones , t-letra-form );
+            letter-spacing: map-get($botones , sp-letras );
+            text-decoration: map-get($botones , underline-text );
+            font-family:  map-get($botones , estilo-letra );
             &:hover{
-                background-color: $color-rosaviejo;
-                color: $color-negro;
+                background-color: $color-principal;
+                color: $color-secundario;
             }
         }
     }
     /*menu hamburguesa*/
     .btn-dark{
-        background-color: $color-rosaviejo;
+        background-color: $color-principal;
         &:hover{
-            color: $color-rosaviejo;
-            background-color: $color-rosafuerte;
-            border-color: 2px solid $color-rosaviejo;
+            color: $color-principal;
+            background-color: #e59393;
+            border-color: 2px solid $color-principal;
         }
     }
     /*Sublista menu*/
     .sublista-turnos{
-        background-color: $color-negro;
-        border: 1px solid $color-rosaviejo;
+        background-color: $color-secundario;
+        border: 1px solid $color-principal;
         text-align: center;
         padding: 2%;
         .sublista-sacar-turnos{
-            border-bottom: 1px solid $color-rosaviejo;
+            border-bottom: 1px solid $color-principal;
         }
     }
 }
@@ -75,7 +83,7 @@
         }
     }
     .nav-hamburgesa{
-        background-color: $color-rosaviejo;
+        background-color: $color-principal;
     }
     .div-boton-suscripcion{
         display: flex;
@@ -93,10 +101,10 @@
             border: none;
             .turnos-sublist{
                 border-bottom: none;
-                text-decoration: 3px underline $color-rosaviejo;
+                text-decoration: 3px underline $color-principal;
                 padding: 1% 2% 1% 0%;
                 a{
-                    color: $color-rosafuerte;
+                    color: #e59393;
                 }
             }
         }

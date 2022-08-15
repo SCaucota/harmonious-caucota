@@ -1,4 +1,50 @@
-$color-rosaviejo: #d9a7a7;
-$color-negro: black;
-$color-rosafuerte: #e59393;
-$color-rosaclarito: #e6cfcf
+$color-principal: #d9a7a7;
+$color-secundario: black;
+//-------MAPS------!!
+$botones:(
+    color1: $color-secundario,
+    color2: $color-principal,
+    padding-bottom: 11px 32px,
+    padding-bottom-menu: 10px 20px,
+    padding-bottom-form: 8px 25px,
+    border1: 2px solid $color-principal,
+    border2: 2px solid $color-secundario,
+    color-texto1: $color-principal,
+    color-texto2: $color-secundario,
+    t-letra: 20px,
+    t-letra-form: 15px,
+    sp-letras: 1.5px,
+    underline-text: none,
+    estilo-letra: 'Montserrat Alternates',
+    estilo-letra-form: 'Liberation Serif',
+);
+//-------EXTENDS------!!
+%flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+%subtitulos-index{
+    font-size: 40px;
+    font-family: 'Playfair Display SC', serif;
+    text-decoration: underline;
+}
+//-------MIXINS------!!
+@mixin padding-tyb ($padding-top, $padding-bottom){
+    @if ($padding-top == $padding-bottom) {
+        padding-top: $padding-top;
+        padding-bottom: $padding-top;
+    }@else{
+        padding-bottom: $padding-bottom;
+        padding-top: $padding-top;
+    }
+}
+
+@mixin sizeimg ($ancho, $alto){
+    @if $ancho > 0 {
+        width: $ancho;
+    }
+    @if $alto > 0 {
+        height: $alto;
+    }
+}

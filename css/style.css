@@ -28,6 +28,26 @@ body {
     bottom: 20px;
     right: auto; } }
 
+#servicios .div-servicios, #contactanos .div-container-contactanos .div-info-contactanos, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones, #contactanos .titulo-contactanos {
+  font-size: 40px;
+  font-family: 'Playfair Display SC', serif;
+  text-decoration: underline; }
+
+#servicios .div-servicios, #contactanos .div-container-contactanos .div-info-contactanos, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones, #contactanos .titulo-contactanos {
+  font-size: 40px;
+  font-family: 'Playfair Display SC', serif;
+  text-decoration: underline; }
+
 .header {
   position: sticky;
   top: 0px;
@@ -38,13 +58,19 @@ body {
   .header .menu {
     background-color: black;
     border-bottom: 1px solid #d9a7a7; }
-    .header .menu a {
+    .header .menu .nav-link {
       text-decoration: none;
       color: #d9a7a7;
       font-family: 'Montserrat Alternates', sans-serif; }
-      .header .menu a:hover {
+      .header .menu .nav-link:hover {
         color: #e6cfcf;
         text-decoration: underline; }
+    .header .menu .dropdown-item {
+      text-decoration: none;
+      color: #d9a7a7;
+      font-family: 'Montserrat Alternates', sans-serif; }
+      .header .menu .dropdown-item:hover {
+        color: #e6cfcf; }
   .header .img-logo {
     width: 10em; }
   .header .navbar-expand-lg .navbar-nav .nav-link {
@@ -59,7 +85,7 @@ body {
       font-size: 15px;
       letter-spacing: 1.5px;
       text-decoration: none;
-      font-family: 'Montserrat Alternates', sans-serif; }
+      font-family: "Montserrat Alternates"; }
       .header .div-boton-suscripcion a:hover {
         background-color: #d9a7a7;
         color: black; }
@@ -98,6 +124,16 @@ body {
       padding: 1% 2% 1% 0%; }
       .header .sublista-turnos .turnos-sublist a {
         color: #e59393; } }
+
+#servicios .div-servicios, #contactanos .div-container-contactanos .div-info-contactanos, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones, #contactanos .titulo-contactanos {
+  font-size: 40px;
+  font-family: 'Playfair Display SC', serif;
+  text-decoration: underline; }
 
 .div-footer {
   background-color: black;
@@ -226,10 +262,7 @@ body {
     color: #d9a7a7;
     border-left: 15px solid; }
     #nosotros .div-texto-nosotros h2 {
-      font-size: 40px;
-      text-decoration: underline;
-      padding-inline: 30px;
-      font-family: 'Playfair Display SC', serif; }
+      padding-inline: 30px; }
     #nosotros .div-texto-nosotros p {
       font-size: 140%;
       padding-inline: 30px;
@@ -251,43 +284,36 @@ body {
     width: 80%;
     height: 100%;
     border: 10px solid black; }
-  #servicios .div-servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    #servicios .div-servicios h2 {
-      font-size: 40px;
-      color: black;
-      text-decoration: underline;
-      text-align: center;
-      font-family: 'Playfair Display SC', serif;
-      padding-bottom: 8%; }
-    #servicios .div-servicios .accordion {
-      width: 150%; }
-      #servicios .div-servicios .accordion .accordion-item {
-        border: 0px;
+  #servicios .div-servicios h2 {
+    color: black;
+    text-align: center;
+    padding-bottom: 8%; }
+  #servicios .div-servicios .accordion {
+    width: 150%; }
+    #servicios .div-servicios .accordion .accordion-item {
+      border: 0px;
+      background-color: #d9a7a7; }
+      #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button {
+        padding-left: 20%;
+        padding-right: 20%;
         background-color: #d9a7a7; }
-        #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button {
-          padding-left: 20%;
-          padding-right: 20%;
-          background-color: #d9a7a7; }
-          #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-            background-color: #d9a7a7;
-            color: black;
-            box-shadow: 0 0 0 0.25rem #d9a7a7; }
-          #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button:focus {
-            box-shadow: 0 0 0 0.25rem #d9a7a7; }
-          #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button::after {
-            background-image: url(../img/plus.png); }
-        #servicios .div-servicios .accordion .accordion-item .accordion-body {
-          display: flex;
-          flex-direction: column;
-          padding: 0rem 0rem 1rem 2rem; }
-          #servicios .div-servicios .accordion .accordion-item .accordion-body strong {
-            padding-bottom: 5%; }
+        #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+          background-color: #d9a7a7;
+          color: black;
+          box-shadow: 0 0 0 0.25rem #d9a7a7; }
+        #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button:focus {
+          box-shadow: 0 0 0 0.25rem #d9a7a7; }
+        #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button::after {
+          background-image: url(../img/plus.png); }
+      #servicios .div-servicios .accordion .accordion-item .accordion-body {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 0rem 1rem 2rem; }
+        #servicios .div-servicios .accordion .accordion-item .accordion-body strong {
+          padding-bottom: 5%; }
   #servicios .boton-mas-servicios {
-    padding-top: 15%;
-    padding-bottom: 10%; }
+    padding-bottom: 10%;
+    padding-top: 15%; }
     #servicios .boton-mas-servicios a {
       background: #d9a7a7;
       padding: 11px 32px;
@@ -296,7 +322,7 @@ body {
       font-size: 20px;
       letter-spacing: 1.5px;
       text-decoration: none;
-      font-family: 'Montserrat Alternates', sans-serif; }
+      font-family: "Montserrat Alternates"; }
       #servicios .boton-mas-servicios a:hover {
         background-color: black;
         color: #d9a7a7; }
@@ -309,10 +335,7 @@ body {
   /*boton mas*/ }
   #producciones .titulo-producciones {
     text-align: left;
-    font-size: 40px;
-    font-family: 'Playfair Display SC', serif;
     color: #d9a7a7;
-    text-decoration: underline;
     padding-bottom: 3%; }
   #producciones .div-img-producciones > div {
     padding-bottom: 4%;
@@ -336,7 +359,7 @@ body {
       font-size: 20px;
       letter-spacing: 1.5px;
       text-decoration: none;
-      font-family: 'Montserrat Alternates', sans-serif; }
+      font-family: "Montserrat Alternates"; }
       #producciones .div-boton-mas-producciones .boton-mas:hover {
         background-color: #d9a7a7;
         color: black; }
@@ -346,10 +369,7 @@ body {
   background-color: #d9a7a7;
   padding: 2%; }
   #contactanos .titulo-contactanos {
-    font-size: 40px;
-    font-family: 'Playfair Display SC', serif;
     color: black;
-    text-decoration: underline;
     padding: 30px;
     text-align: center; }
   #contactanos .div-container-contactanos {
@@ -357,11 +377,8 @@ body {
     justify-content: space-around;
     align-items: center; }
     #contactanos .div-container-contactanos .div-info-contactanos {
-      padding-bottom: 5%;
       padding-top: 5%;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
+      padding-bottom: 5%; }
       #contactanos .div-container-contactanos .div-info-contactanos p {
         font-size: 12px;
         font-family: 'Montserrat Alternates', sans-serif; }
@@ -380,13 +397,14 @@ body {
         display: flex;
         justify-content: center; }
         #contactanos .div-container-contactanos .form-contactanos div .boton-enviar a {
-          text-decoration: none;
-          background-color: #d9a7a7;
+          background: #d9a7a7;
+          padding: 8px 25px;
+          border: 2px solid black;
           color: black;
           font-size: 15px;
-          font-family: 'Liberation Serif', sans-serif;
-          border: 1px solid black;
-          padding: 10px 30px; }
+          letter-spacing: 1.5px;
+          text-decoration: none;
+          font-family: "Liberation Serif"; }
           #contactanos .div-container-contactanos .form-contactanos div .boton-enviar a:hover {
             background-color: black;
             color: #d9a7a7; }
@@ -452,16 +470,13 @@ body {
         .precios .div-conteiner-precios > div .table > :not(caption) > * > * {
           border-bottom-width: 0px; }
         .precios .div-conteiner-precios > div .table .table-active {
-          --bs-table-accent-bg: black;
+          --bs-table-accent-bg: $color-secundario;
           color: #d9a7a7; }
 
 /*-----------------PRODUCCIONES----------------*/
 .section-hero-prod {
   background-color: black;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-top: 5%; }
   .section-hero-prod .div-titulo-prod {
     color: #d9a7a7;
@@ -678,10 +693,6 @@ body {
         background-color: black;
         color: #e6cfcf;
         text-align: center; }
-      .section-mis-turnos .div-mis-turnos .card .card-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
 
 /*--------------------MEDIA QUERIES----------------*/
 @media screen and (max-width: 1298px) {

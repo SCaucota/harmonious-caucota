@@ -76,6 +76,9 @@
                         &:focus{
                             box-shadow: 0 0 0 0.25rem $color-rosaviejo;
                         }
+                        &::after{
+                            background-image: url(../img/plus.png);
+                        }
                     }
                 }
                 .accordion-body{
@@ -1002,11 +1005,6 @@
         }
     }
     #servicios{
-        .div-servicios{
-            .accordion{
-                width:100%;
-            }
-        }
         .boton-mas-servicios{
             a{
                 font-size: 15px;

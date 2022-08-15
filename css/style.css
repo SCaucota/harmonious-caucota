@@ -251,6 +251,17 @@ body {
     flex-direction: column; } }
 
 /*-----------------INDEX-----------------*/
+/*--section 0 (NOSOTROS)--*/
+.titulo-index {
+  background-color: #d9a7a7;
+  border: 6px dashed black;
+  text-align: center;
+  color: black; }
+  .titulo-index .div-titulo-index h1 {
+    font-family: 'Playfair Display SC', serif;
+    padding-top: 3%;
+    padding-bottom: 3%; }
+
 /*--section 1 (NOSOTROS)--*/
 #nosotros {
   background-color: black;
@@ -479,10 +490,12 @@ body {
   justify-content: center;
   padding-top: 5%; }
   .section-hero-prod .div-titulo-prod {
+    display: flex;
+    flex-direction: column-reverse;
     color: #d9a7a7;
     text-align: center;
     font-family: 'Playfair Display SC', serif; }
-    .section-hero-prod .div-titulo-prod h1 {
+    .section-hero-prod .div-titulo-prod h2 {
       font-size: 30px;
       letter-spacing: 5px;
       animation-duration: 4s;
@@ -509,7 +522,7 @@ body {
     color: #e6cfcf; }
   100% {
     color: #be94be; } }
-      .section-hero-prod .div-titulo-prod .div-galeria h2 {
+      .section-hero-prod .div-titulo-prod .div-galeria h1 {
         font-size: 50px;
         letter-spacing: 20px; }
   .section-hero-prod .grupo-img-1 {

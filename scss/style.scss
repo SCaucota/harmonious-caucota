@@ -4,6 +4,19 @@
 @import "./components/footer";
 
 /*-----------------INDEX-----------------*/
+/*--section 0 (NOSOTROS)--*/
+.titulo-index{
+    background-color: $color-principal;
+    border: 6px dashed $color-secundario;
+    text-align: center;
+    color: $color-secundario;
+    .div-titulo-index{
+        h1{
+            font-family: 'Playfair Display SC', serif;
+            @include padding-tyb (3%,3%);
+        }
+    }
+}
 /*--section 1 (NOSOTROS)--*/
 #nosotros{
     background-color: $color-secundario;
@@ -295,10 +308,12 @@
     justify-content: center;
     padding-top: 5%;
     .div-titulo-prod{
+        display: flex;
+        flex-direction: column-reverse;
         color: $color-principal;
         text-align: center;
         font-family: 'Playfair Display SC', serif;
-        h1{
+        h2{
             font-size: 30px;
             letter-spacing: 5px;
             animation-duration: 4s;
@@ -333,7 +348,7 @@
                     color: rgb(190, 148, 190);
                 }
             }
-            h2{
+            h1{
                 font-size: 50px;
                 letter-spacing: 20px;
             }

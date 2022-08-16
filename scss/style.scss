@@ -29,6 +29,7 @@
         border-left: 15px solid;
         h2{
             @extend %subtitulos-index;
+            padding-bottom: 0%;
             padding-inline: 30px;
         }
         p{
@@ -62,7 +63,6 @@
             @extend %subtitulos-index;
             color: $color-secundario;
             text-align: center;
-            padding-bottom: 8%;
         }
         .accordion{
             width: 150%;
@@ -103,7 +103,7 @@
         @include padding-tyb (15%, 10%);
         a{
             background: map-get($botones , color2 );
-            padding: map-get($botones , padding-bottom );
+            padding: map-get($botones , padding-bottom-basico );
             border: map-get($botones , border2 );
             color: map-get($botones , color-texto2 );
             font-size: map-get($botones , t-letra );
@@ -149,7 +149,7 @@
         justify-content: center;
         .boton-mas{
             background: map-get($botones , color1 );
-            padding: map-get($botones , padding-bottom );
+            padding: map-get($botones , padding-bottom-basico );
             border: map-get($botones , border1 );
             color: map-get($botones , color-texto1 );
             font-size: map-get($botones , t-letra );

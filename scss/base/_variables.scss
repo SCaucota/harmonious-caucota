@@ -4,7 +4,7 @@ $color-secundario: black;
 $botones:(
     color1: $color-secundario,
     color2: $color-principal,
-    padding-bottom: 11px 32px,
+    padding-bottom-basico: 11px 32px,
     padding-bottom-menu: 10px 20px,
     padding-bottom-form: 8px 25px,
     border1: 2px solid $color-principal,
@@ -28,6 +28,7 @@ $botones:(
     font-size: 40px;
     font-family: 'Playfair Display SC', serif;
     text-decoration: underline;
+    padding-bottom: 8%;
 }
 //-------MIXINS------!!
 @mixin padding-tyb ($padding-top, $padding-bottom){

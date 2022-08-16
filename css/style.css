@@ -36,7 +36,8 @@ body {
 #nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones, #contactanos .titulo-contactanos {
   font-size: 40px;
   font-family: 'Playfair Display SC', serif;
-  text-decoration: underline; }
+  text-decoration: underline;
+  padding-bottom: 8%; }
 
 #servicios .div-servicios, #contactanos .div-container-contactanos .div-info-contactanos, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
   display: flex;
@@ -46,7 +47,8 @@ body {
 #nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones, #contactanos .titulo-contactanos {
   font-size: 40px;
   font-family: 'Playfair Display SC', serif;
-  text-decoration: underline; }
+  text-decoration: underline;
+  padding-bottom: 8%; }
 
 .header {
   position: sticky;
@@ -133,7 +135,8 @@ body {
 #nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones, #contactanos .titulo-contactanos {
   font-size: 40px;
   font-family: 'Playfair Display SC', serif;
-  text-decoration: underline; }
+  text-decoration: underline;
+  padding-bottom: 8%; }
 
 .div-footer {
   background-color: black;
@@ -273,6 +276,7 @@ body {
     color: #d9a7a7;
     border-left: 15px solid; }
     #nosotros .div-texto-nosotros h2 {
+      padding-bottom: 0%;
       padding-inline: 30px; }
     #nosotros .div-texto-nosotros p {
       font-size: 140%;
@@ -297,8 +301,7 @@ body {
     border: 10px solid black; }
   #servicios .div-servicios h2 {
     color: black;
-    text-align: center;
-    padding-bottom: 8%; }
+    text-align: center; }
   #servicios .div-servicios .accordion {
     width: 150%; }
     #servicios .div-servicios .accordion .accordion-item {

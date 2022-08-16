@@ -484,7 +484,7 @@ body {
         .precios .div-conteiner-precios > div .table > :not(caption) > * > * {
           border-bottom-width: 0px; }
         .precios .div-conteiner-precios > div .table .table-active {
-          --bs-table-accent-bg: $color-secundario;
+          --bs-table-accent-bg: black;
           color: #d9a7a7; }
 
 /*-----------------PRODUCCIONES----------------*/

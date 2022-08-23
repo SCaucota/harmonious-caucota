@@ -48,8 +48,12 @@
             text-decoration: map-get($botones , underline-text );
             font-family:  map-get($botones , estilo-letra );
             &:hover{
-                background-color: $color-principal;
-                color: $color-secundario;
+                background: linear-gradient(to right, $color-secundario 50%, $color-principal 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all 0.4s ease-out;
+                transition-delay: 0s;
+                color: black;
             }
         }
     }
@@ -108,5 +112,14 @@
                 }
             }
         }
+        /*-----Sub-list menú-----*/
+        .navbar-expand-lg{
+            .navbar-nav{
+                .nav-link {
+                    padding-right: 1rem;
+                }
+            }
+        }
     }
+    
 }

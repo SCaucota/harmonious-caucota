@@ -28,7 +28,7 @@ body {
     bottom: 20px;
     right: auto; } }
 
-#servicios .div-servicios, #contactanos .div-container-contactanos .div-info-contactanos, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
+#servicios .div-servicios, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -39,7 +39,7 @@ body {
   text-decoration: underline;
   padding-bottom: 8%; }
 
-#servicios .div-servicios, #contactanos .div-container-contactanos .div-info-contactanos, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
+#servicios .div-servicios, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -89,7 +89,11 @@ body {
       text-decoration: none;
       font-family: "Montserrat Alternates"; }
       .header .div-boton-suscripcion a:hover {
-        background-color: #d9a7a7;
+        background: linear-gradient(to right, black 50%, #d9a7a7 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.4s ease-out;
+        transition-delay: 0s;
         color: black; }
   .header .btn-dark {
     background-color: #d9a7a7; }
@@ -118,16 +122,20 @@ body {
 
 @media screen and (max-width: 988px) {
   /*-----Sub-list menú-----*/
-  .header .sublista-turnos {
-    border: none; }
-    .header .sublista-turnos .turnos-sublist {
-      border-bottom: none;
-      text-decoration: 3px underline #d9a7a7;
-      padding: 1% 2% 1% 0%; }
-      .header .sublista-turnos .turnos-sublist a {
-        color: #e59393; } }
+  .header {
+    /*-----Sub-list menú-----*/ }
+    .header .sublista-turnos {
+      border: none; }
+      .header .sublista-turnos .turnos-sublist {
+        border-bottom: none;
+        text-decoration: 3px underline #d9a7a7;
+        padding: 1% 2% 1% 0%; }
+        .header .sublista-turnos .turnos-sublist a {
+          color: #e59393; }
+    .header .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1rem; } }
 
-#servicios .div-servicios, #contactanos .div-container-contactanos .div-info-contactanos, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
+#servicios .div-servicios, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -311,6 +319,8 @@ body {
         padding-left: 20%;
         padding-right: 20%;
         background-color: #d9a7a7; }
+        #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button p {
+          color: black; }
         #servicios .div-servicios .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
           background-color: #d9a7a7;
           color: black;
@@ -392,10 +402,19 @@ body {
     align-items: center; }
     #contactanos .div-container-contactanos .div-info-contactanos {
       padding-top: 5%;
-      padding-bottom: 5%; }
-      #contactanos .div-container-contactanos .div-info-contactanos p {
-        font-size: 12px;
-        font-family: 'Montserrat Alternates', sans-serif; }
+      padding-bottom: 5%;
+      padding-left: 20%; }
+      #contactanos .div-container-contactanos .div-info-contactanos .div-conteiner-datos {
+        display: flex;
+        flex-direction: row; }
+        #contactanos .div-container-contactanos .div-info-contactanos .div-conteiner-datos img {
+          padding-right: 5%;
+          width: 3rem;
+          height: 2rem; }
+        #contactanos .div-container-contactanos .div-info-contactanos .div-conteiner-datos p {
+          padding-top: 3%;
+          font-size: 12px;
+          font-family: 'Montserrat Alternates', sans-serif; }
     #contactanos .div-container-contactanos .form-contactanos div {
       padding-bottom: 1%;
       /*boton enviar*/ }
@@ -704,7 +723,8 @@ body {
     padding-top: 5%;
     padding-bottom: 5%; }
     .section-mis-turnos .div-mis-turnos .card {
-      background-color: #d9a7a7; }
+      background-color: #d9a7a7;
+      width: 18rem; }
       .section-mis-turnos .div-mis-turnos .card .card-header {
         background-color: black;
         color: #e6cfcf;
@@ -840,15 +860,21 @@ body {
   #contactanos .div-container-contactanos .div-iframe-contactanos iframe {
     width: 450px;
     height: 300px; }
+  #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos {
+    padding-left: 0; }
+    #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos img {
+      width: 2rem;
+      height: 1.5rem; }
   #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos .form-row {
     flex-direction: column; }
     #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos .form-row .div-nombre {
-      margin-right: 0%; }
+      margin-right: 0%;
+      padding-bottom: 2%; }
   /*-----PRODUCCIONES-----*/
-  .section-hero-prod .div-titulo-prod h1 {
-    font-size: 120%; }
-  .section-hero-prod .div-titulo-prod .div-galeria h2 {
-    font-size: 250%; } }
+  .section-hero-prod .div-titulo-prod .div-galeria h1 {
+    font-size: 250%; }
+  .section-hero-prod .div-titulo-prod h2 {
+    font-size: 120%; } }
 
 @media screen and (max-width: 490px) {
   /*-----INDEX-----*/
@@ -859,13 +885,15 @@ body {
     width: 400px;
     height: 300px; }
   /*-----PRODUCCIONES-----*/
-  .div-titulo-prod h1 {
-    font-size: 150%; }
-  .div-titulo-prod .div-galeria h2 {
+  .div-titulo-prod .div-galeria h1 {
     font-size: 250%; }
+  .div-titulo-prod h2 {
+    font-size: 150%; }
   /*-----SACAR TURNO-----*/
   .section-sacar-turno .form-sacar-turnos .div-terminos p {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .section-sacar-turno .form-sacar-turnos .div-terminos label {
+    font-size: 12px; } }
 
 @media screen and (max-width: 426px) {
   /*-----INDEX-----*/
@@ -910,13 +938,13 @@ body {
 @media screen and (max-width: 390px) {
   /*-----INDEX-----*/
   /*nosotros*/
-  .div-texto-nosotros p {
+  #nosotros .div-texto-nosotros p {
     font-size: 15px; }
   #servicios .boton-mas-servicios a {
     font-size: 15px;
     padding: 8px 20px; }
   /*producciones*/
-  .div-boton-mas-producciones a {
+  #producciones .div-boton-mas-producciones .boton-mas {
     font-size: 15px;
     padding: 8px 20px; }
   /*-----LISTA DE PRECIOS-----*/
@@ -929,10 +957,13 @@ body {
       border: 2px solid #e6cfcf;
       margin: 0% 10% 2% 10%; }
   /*-----PRODUCCIONES-----*/
-  .section-hero-prod .div-titulo-prod h1 {
-    font-size: 100%; }
-  .section-hero-prod .div-titulo-prod .div-galeria h2 {
+  .section-hero-prod .div-titulo-prod .div-galeria h1 {
     font-size: 180%; }
+  .section-hero-prod .div-titulo-prod h2 {
+    font-size: 100%; }
   /*-----SACAR TURNO-----*/
   .section-sacar-turno .form-sacar-turnos .div-terminos .div-check-terminos-sacar-turno {
-    padding: 0% 25% 4% 25%; } }
+    padding: 0% 25% 4% 25%; }
+  /*-----MIS TURNO-----*/
+  .section-mis-turnos .div-mis-turnos .card {
+    width: 15rem; } }

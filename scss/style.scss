@@ -126,10 +126,12 @@
     height: auto;
     padding: 2% 2% 4% 2%;
     .titulo-producciones {
-        @extend %subtitulos-index;
-        text-align: left;
-        color: $color-principal;
-        padding-bottom: 3%;
+        h2{
+            @extend %subtitulos-index;
+            text-align: left;
+            color: $color-principal;
+            padding-bottom: 3%;
+        }
     }
     .div-img-producciones{
         >div{
@@ -675,7 +677,9 @@
     #producciones{
         height: auto;
         .titulo-producciones{
-            text-align: center;
+            h2{
+                text-align: center;
+            }
         }
         .div-producciones{
             .div-img-producciones{
@@ -926,31 +930,10 @@
 
 @media screen and (max-width:426px){
     /*-----INDEX-----*/
-    #nosotros{
-        .titulo-querie{
-            h2{
-                font-size: 25px;
-            }
-        } 
-    }
-    #servicios{
-        .titulo-querie{
-            h2{
-                font-size: 25px;
-            }
-        } 
-    }
-    #producciones{
-        .titulo-querie{
-            h2{
-                font-size: 25px;
-            }
-        } 
+    .titulo-querie{
+        font-size: 25px;
     }
     #contactanos{
-        .titulo-querie{
-            font-size: 25px;
-        }
         .div-container-contactanos{
             .div-iframe-contactanos{
                 iframe{

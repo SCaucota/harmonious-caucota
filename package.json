@@ -1,7 +1,7 @@
 {
   "name": "harmonious-caucota",
   "version": "1.0.0",
-  "description": "",
+  "description": "Harmonious, peluquería unisex. La peluquería para todos y todas. Confía en nosotros, deja en nuestras manos tu preciada melena y obtendrás ese look que tanto deseas lucir.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/SCaucota/harmonious-caucota.git"
   },
-  "author": "",
+  "author": "Caucota María Sofía",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SCaucota/harmonious-caucota/issues"

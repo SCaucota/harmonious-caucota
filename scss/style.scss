@@ -182,55 +182,62 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        .div-info-contactanos{
-            @include padding-tyb (5%, 5%);
-            padding-left: 20%;
-            .div-conteiner-datos{
-                display: flex;
-                flex-direction: row;
-                img{
-                    padding-right: 5%;
-                    width: 3rem;
-                    height: 2rem;
-                }
-                p{
-                    padding-top: 3%;
-                    font-size: 12px;
-                    font-family: 'Montserrat Alternates', sans-serif;
-                }
-            }
-            
-        }
-        .form-contactanos{
-            div{
-                padding-bottom: 1%;
-                .form-row{
+        .div-form-contactanos{
+            background-color: $color-secundario;
+            border-radius: 19px;
+            border: 20px inset $color-secundario;
+            .div-info-contactanos{
+                color: $color-principal;
+                @include padding-tyb (5%, 5%);
+                padding-left: 13%;
+                .div-conteiner-datos{
                     display: flex;
                     flex-direction: row;
-                    .div-nombre{
-                        margin-right: 2%;
+                    padding-bottom: 5px;
+                    img{
+                        padding-right: 5%;
+                        width: 3rem;
+                        height: 2rem;
+                    }
+                    p{
+                        padding-top: 2%;
+                        font-size: 15px;
+                        font-family: 'Montserrat Alternates', sans-serif;
                     }
                 }
-                .div-asunto-contactanos{
-                    margin-bottom: 1%;
-                }
-                /*boton enviar*/
-                .boton-enviar{
-                    margin-top: 5%;
-                    display: flex;
-                    justify-content: center;
-                    a{
-                        background: map-get($botones , color2 );
-                        padding: map-get($botones , padding-bottom-form );
-                        border: map-get($botones , border2 );
-                        color: map-get($botones , color-texto2 );
-                        font-size: map-get($botones , t-letra-form );
-                        letter-spacing: map-get($botones , sp-letras );
-                        text-decoration: map-get($botones , underline-text );
-                        font-family:  map-get($botones , estilo-letra-form );
-                        &:hover{
-                            background-color: $color-secundario;
-                            color: $color-principal;
+            }
+            .form-contactanos{
+                div{
+                    padding-bottom: 1%;
+                    .form-row{
+                        display: flex;
+                        flex-direction: row;
+                        .div-nombre{
+                            margin-right: 2%;
+                        }
+                    }
+                    .div-asunto-contactanos{
+                        margin-bottom: 1%;
+                    }
+                    /*boton enviar*/
+                    .boton-enviar{
+                        margin-top: 5%;
+                        display: flex;
+                        justify-content: center;
+                        a{
+                            background: map-get($botones , color2 );
+                            padding: map-get($botones , padding-bottom-form );
+                            border: map-get($botones , border2 );
+                            color: map-get($botones , color-texto2 );
+                            font-size: map-get($botones , t-letra-form );
+                            letter-spacing: map-get($botones , sp-letras );
+                            text-decoration: map-get($botones , underline-text );
+                            font-family:  map-get($botones , estilo-letra-form );
+                            &:hover{
+                                background-color: $color-secundario;
+                                color: $color-principal;
+                                border: 2px solid $color-principal;
+                            }
                         }
                     }
                 }
@@ -247,49 +254,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2%;
     img{
-        width: 50%;
-        max-width: 50%;
+        width: 15rem;
     }
 }
-.section-titulo-principios{
-    height: auto;
+.titulo-lista-precios{
     background-color: $color-secundario;
-    color: $color-principal;
-    border-bottom: 1px solid $color-principal;
-    .titulo-lista-precios{
-        h1{
-            margin-bottom: 2%;
-            text-align: center;
-            font-size: 25px;
-            font-family: 'Playfair Display SC', serif;
-            letter-spacing: 3px;
-            text-decoration: underline;
-        }
-    }
-    .principios-precios{
-        li{
-            margin-left: 22%;
-            margin-right: 20%;
-            padding-bottom: 2%;
-            font-size: 20px;
-            font-family: 'Liberation Serif', sans-serif;
-        }
+    padding-top: 2%;
+    padding-bottom: 3%;
+    h1{
+        color: $color-principal;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Playfair Display SC', serif;
+        letter-spacing: 5px;
+        text-decoration: underline;
+        margin-bottom: 0rem;
     }
 }
 .precios{
     color: $color-principal;
     background-color: $color-secundario;
-    @include padding-tyb (4%, 4%);
+    @include padding-tyb (3%, 3%);
     .titulo{
-        border: 2px solid #e6cfcf;
+        border-radius: 19px;
+        background: #d9a7a7;
+        box-shadow:  5px 5px 21px #b48b8b,
+        -5px -5px 21px #fec3c3;
         margin: 0% 20% 2% 20%;
         text-align: center;
         font-size: 15px;
         letter-spacing: 2px;
-        background-color: $color-secundario;
-        color: $color-principal;
+        color: $color-secundario;
         font-family: 'Playfair Display SC', serif;
+        margin-bottom: 3%;
         h2{
             margin-bottom: 0rem;
         }
@@ -305,6 +304,7 @@
             .table{
                 background-color: $color-principal;
                 font-size: 20px;
+                border: 1px solid $color-principal;
                 >:not(caption)>*>* {
                     border-bottom-width: 0px;
                 }
@@ -312,6 +312,24 @@
                     --bs-table-accent-bg: black;
                     color: $color-principal;
                 }
+            }
+        }
+    }
+}
+
+.section-principios-precios{
+    background-color: $color-secundario;
+    padding-bottom: 3%;
+    .principios-precios{
+        ul{
+            margin-bottom: 0rem;
+            li{
+                margin-left: 15%;
+                margin-right: 18%;
+                padding-bottom: 2%;
+                font-size: 15px;
+                font-family: 'Liberation Serif', sans-serif;
+                color: $color-principal;
             }
         }
     }
@@ -632,6 +650,9 @@
     /*contactanos*/
     .div-container-contactanos{
         flex-direction: column;
+        .div-form-contactanos{
+            margin: 4% 0% 4% 0%;
+        }
     }
 }
 
@@ -850,11 +871,16 @@
             }
             .div-form-contactanos{
                 .div-info-contactanos{
-                    padding-left: 0;
+                    padding-left: 13%;
                     .div-conteiner-datos{
+                        padding-bottom: 5px;
                         img{
-                            width: 2rem;
-                            height: 1.5rem;
+                            width: 3rem;
+                            height: 2rem;
+                        }
+                        p{
+                            font-size: 15px;
+                            padding-top: 2%;
                         }
                     }
                 }
@@ -960,8 +986,14 @@
     }
     .precios{
         .titulo{
+            margin: 0% 10% 2% 10%;
             h2{
                 font-size: 20px;
+            }
+        }
+        .div-conteiner-precios{
+            div{
+                width: 70%;
             }
         }
     }
@@ -1009,7 +1041,7 @@
             }
         }
     }
-    
+    /*servicios*/
     #servicios{
         .boton-mas-servicios{
             a{
@@ -1028,15 +1060,10 @@
         }
     }
     
+    
     /*-----LISTA DE PRECIOS-----*/
     .precios{
-        color: $color-principal;
-        background-color: $color-secundario;
         @include padding-tyb (4%, 4%);
-        .titulo{
-            border: 2px solid #e6cfcf;
-            margin: 0% 10% 2% 10%;
-        }
     }
     /*-----PRODUCCIONES-----*/
     .section-hero-prod{

@@ -10,9 +10,6 @@
   padding: 0%;
   box-sizing: border-box; }
 
-body {
-  background-color: black; }
-
 .icono-flotante img {
   width: 80px;
   height: 80px;
@@ -121,20 +118,24 @@ body {
   .ul-menu {
     text-align: center; } }
 
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 991px) {
   /*-----Sub-list menú-----*/
   .header {
     /*-----Sub-list menú-----*/ }
     .header .sublista-turnos {
-      border: none; }
+      border: none;
+      padding: 0%; }
       .header .sublista-turnos .turnos-sublist {
         border-bottom: none;
-        text-decoration: 3px underline #d9a7a7;
-        padding: 1% 2% 1% 0%; }
+        text-decoration: 2px underline #d9a7a7;
+        padding: 0% 0% 0% 0%; }
         .header .sublista-turnos .turnos-sublist a {
-          color: #e59393; }
+          color: #e6cfcf;
+          padding-right: 2.5rem; }
     .header .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 1rem; } }
+      padding-right: 1rem; }
+    .header .navbar-expand-lg .navbar-nav .dropdown {
+      padding-left: 0.8rem; } }
 
 #servicios .div-servicios, .section-hero-prod, .section-mis-turnos .div-mis-turnos .card .card-body {
   display: flex;
@@ -225,6 +226,8 @@ body {
   font-family: 'Liberation Serif', sans-serif;
   font-size: 15px;
   padding-left: 4%; }
+  .div-leyenda-footer p {
+    margin-bottom: 0rem; }
 
 @media screen and (max-width: 1079px) {
   .div-footer {
@@ -401,47 +404,54 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    #contactanos .div-container-contactanos .div-info-contactanos {
-      padding-top: 5%;
-      padding-bottom: 5%;
-      padding-left: 20%; }
-      #contactanos .div-container-contactanos .div-info-contactanos .div-conteiner-datos {
-        display: flex;
-        flex-direction: row; }
-        #contactanos .div-container-contactanos .div-info-contactanos .div-conteiner-datos img {
-          padding-right: 5%;
-          width: 3rem;
-          height: 2rem; }
-        #contactanos .div-container-contactanos .div-info-contactanos .div-conteiner-datos p {
-          padding-top: 3%;
-          font-size: 12px;
-          font-family: 'Montserrat Alternates', sans-serif; }
-    #contactanos .div-container-contactanos .form-contactanos div {
-      padding-bottom: 1%;
-      /*boton enviar*/ }
-      #contactanos .div-container-contactanos .form-contactanos div .form-row {
-        display: flex;
-        flex-direction: row; }
-        #contactanos .div-container-contactanos .form-contactanos div .form-row .div-nombre {
-          margin-right: 2%; }
-      #contactanos .div-container-contactanos .form-contactanos div .div-asunto-contactanos {
-        margin-bottom: 1%; }
-      #contactanos .div-container-contactanos .form-contactanos div .boton-enviar {
-        margin-top: 5%;
-        display: flex;
-        justify-content: center; }
-        #contactanos .div-container-contactanos .form-contactanos div .boton-enviar a {
-          background: #d9a7a7;
-          padding: 8px 25px;
-          border: 2px solid black;
-          color: black;
-          font-size: 15px;
-          letter-spacing: 1.5px;
-          text-decoration: none;
-          font-family: "Liberation Serif"; }
-          #contactanos .div-container-contactanos .form-contactanos div .boton-enviar a:hover {
-            background-color: black;
-            color: #d9a7a7; }
+    #contactanos .div-container-contactanos .div-form-contactanos {
+      background-color: black;
+      border-radius: 19px;
+      border: 20px inset black; }
+      #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos {
+        color: #d9a7a7;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 13%; }
+        #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos {
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 5px; }
+          #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos img {
+            padding-right: 5%;
+            width: 3rem;
+            height: 2rem; }
+          #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos p {
+            padding-top: 2%;
+            font-size: 15px;
+            font-family: 'Montserrat Alternates', sans-serif; }
+      #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos div {
+        padding-bottom: 1%;
+        /*boton enviar*/ }
+        #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos div .form-row {
+          display: flex;
+          flex-direction: row; }
+          #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos div .form-row .div-nombre {
+            margin-right: 2%; }
+        #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos div .div-asunto-contactanos {
+          margin-bottom: 1%; }
+        #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos div .boton-enviar {
+          margin-top: 5%;
+          display: flex;
+          justify-content: center; }
+          #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos div .boton-enviar a {
+            background: #d9a7a7;
+            padding: 8px 25px;
+            border: 2px solid black;
+            color: black;
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            font-family: "Liberation Serif"; }
+            #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos div .boton-enviar a:hover {
+              background-color: black;
+              color: #d9a7a7;
+              border: 2px solid #d9a7a7; }
 
 /*-----------------lISTA DE PRECIOS----------------*/
 .section-img-logo {
@@ -450,44 +460,40 @@ body {
   background-color: black;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 2%; }
   .section-img-logo img {
-    width: 50%;
-    max-width: 50%; }
+    width: 15rem; }
 
-.section-titulo-principios {
-  height: auto;
+.titulo-lista-precios {
   background-color: black;
-  color: #d9a7a7;
-  border-bottom: 1px solid #d9a7a7; }
-  .section-titulo-principios .titulo-lista-precios h1 {
-    margin-bottom: 2%;
+  padding-top: 2%;
+  padding-bottom: 3%; }
+  .titulo-lista-precios h1 {
+    color: #d9a7a7;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     font-family: 'Playfair Display SC', serif;
-    letter-spacing: 3px;
-    text-decoration: underline; }
-  .section-titulo-principios .principios-precios li {
-    margin-left: 22%;
-    margin-right: 20%;
-    padding-bottom: 2%;
-    font-size: 20px;
-    font-family: 'Liberation Serif', sans-serif; }
+    letter-spacing: 5px;
+    text-decoration: underline;
+    margin-bottom: 0rem; }
 
 .precios {
   color: #d9a7a7;
   background-color: black;
-  padding-top: 4%;
-  padding-bottom: 4%; }
+  padding-top: 3%;
+  padding-bottom: 3%; }
   .precios .titulo {
-    border: 2px solid #e6cfcf;
+    border-radius: 19px;
+    background: #d9a7a7;
+    box-shadow: 5px 5px 21px #b48b8b, -5px -5px 21px #fec3c3;
     margin: 0% 20% 2% 20%;
     text-align: center;
     font-size: 15px;
     letter-spacing: 2px;
-    background-color: black;
-    color: #d9a7a7;
-    font-family: 'Playfair Display SC', serif; }
+    color: black;
+    font-family: 'Playfair Display SC', serif;
+    margin-bottom: 3%; }
     .precios .titulo h2 {
       margin-bottom: 0rem; }
   .precios .div-conteiner-precios {
@@ -500,12 +506,26 @@ body {
       width: 50%; }
       .precios .div-conteiner-precios > div .table {
         background-color: #d9a7a7;
-        font-size: 20px; }
+        font-size: 20px;
+        border: 1px solid #d9a7a7; }
         .precios .div-conteiner-precios > div .table > :not(caption) > * > * {
           border-bottom-width: 0px; }
         .precios .div-conteiner-precios > div .table .table-active {
           --bs-table-accent-bg: black;
           color: #d9a7a7; }
+
+.section-principios-precios {
+  background-color: black;
+  padding-bottom: 3%; }
+  .section-principios-precios .principios-precios ul {
+    margin-bottom: 0rem; }
+    .section-principios-precios .principios-precios ul li {
+      margin-left: 15%;
+      margin-right: 18%;
+      padding-bottom: 2%;
+      font-size: 15px;
+      font-family: 'Liberation Serif', sans-serif;
+      color: #d9a7a7; }
 
 /*-----------------PRODUCCIONES----------------*/
 .section-hero-prod {
@@ -739,7 +759,9 @@ body {
     font-size: 20px; }
   /*contactanos*/
   .div-container-contactanos {
-    flex-direction: column; } }
+    flex-direction: column; }
+    .div-container-contactanos .div-form-contactanos {
+      margin: 4% 0% 4% 0%; } }
 
 @media screen and (max-width: 1116px) {
   /*-----INDEX-----*/
@@ -862,10 +884,15 @@ body {
     width: 450px;
     height: 300px; }
   #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos {
-    padding-left: 0; }
-    #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos img {
-      width: 2rem;
-      height: 1.5rem; }
+    padding-left: 13%; }
+    #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos {
+      padding-bottom: 5px; }
+      #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos img {
+        width: 3rem;
+        height: 2rem; }
+      #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos p {
+        font-size: 15px;
+        padding-top: 2%; }
   #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos .form-row {
     flex-direction: column; }
     #contactanos .div-container-contactanos .div-form-contactanos .form-contactanos .form-row .div-nombre {
@@ -911,8 +938,12 @@ body {
       font-size: 15px; }
     .section-titulo-principios .principios-precios li {
       font-size: 15px; }
-  .precios .titulo h2 {
-    font-size: 20px; }
+  .precios .titulo {
+    margin: 0% 10% 2% 10%; }
+    .precios .titulo h2 {
+      font-size: 20px; }
+  .precios .div-conteiner-precios div {
+    width: 70%; }
   /*-----SUSCRIBETE-----*/
   .section-suscribete .div-titulo-suscribete .div-suscribete-efecto {
     height: 40px; }
@@ -935,6 +966,7 @@ body {
   /*nosotros*/
   #nosotros .div-texto-nosotros p {
     font-size: 15px; }
+  /*servicios*/
   #servicios .boton-mas-servicios a {
     font-size: 15px;
     padding: 8px 20px; }
@@ -944,13 +976,8 @@ body {
     padding: 8px 20px; }
   /*-----LISTA DE PRECIOS-----*/
   .precios {
-    color: #d9a7a7;
-    background-color: black;
     padding-top: 4%;
     padding-bottom: 4%; }
-    .precios .titulo {
-      border: 2px solid #e6cfcf;
-      margin: 0% 10% 2% 10%; }
   /*-----PRODUCCIONES-----*/
   .section-hero-prod .div-titulo-prod .div-galeria h1 {
     font-size: 180%; }

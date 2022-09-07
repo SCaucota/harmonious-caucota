@@ -98,17 +98,19 @@
     }
 }
 
-@media screen and (max-width:988px) {
+@media screen and (max-width:991px){
     /*-----Sub-list menú-----*/
     .header{
         .sublista-turnos{
             border: none;
+            padding: 0%;
             .turnos-sublist{
                 border-bottom: none;
-                text-decoration: 3px underline $color-principal;
-                padding: 1% 2% 1% 0%;
+                text-decoration: 2px underline $color-principal;
+                padding: 0% 0% 0% 0%;
                 a{
-                    color: #e59393;
+                    color: #e6cfcf;
+                    padding-right: 2.5rem;
                 }
             }
         }
@@ -118,8 +120,10 @@
                 .nav-link {
                     padding-right: 1rem;
                 }
+                .dropdown{
+                    padding-left: 0.8rem;
+                }
             }
         }
     }
-    
 }

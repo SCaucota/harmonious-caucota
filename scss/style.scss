@@ -4,7 +4,7 @@
 @import "./components/footer";
 
 /*-----------------INDEX-----------------*/
-/*--section 0 (NOSOTROS)--*/
+/*--section 0--*/
 .titulo-index{
     background-color: $color-principal;
     border: 6px dashed $color-secundario;
@@ -172,7 +172,7 @@
 #contactanos{
     background-color: $color-principal;
     padding: 2%;
-    .titulo-contactanos{
+    h2{
         @extend %subtitulos-index;
         color: $color-secundario;
         padding: 30px;
@@ -279,7 +279,7 @@
     @include padding-tyb (3%, 3%);
     .titulo{
         border-radius: 19px;
-        background: #d9a7a7;
+        background: $color-principal;
         box-shadow:  5px 5px 21px #b48b8b,
         -5px -5px 21px #fec3c3;
         margin: 0% 20% 2% 20%;
@@ -637,6 +637,39 @@
     }
 }
 
+/*------------ERROR 404-----------*/
+.body-error{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .div-texto-error{
+        border-left: 10px solid $color-principal;
+        color: $color-principal;
+        padding-left: 5%;
+        margin-bottom: 15%;
+    }
+    .div-boton-error{
+        display: flex;
+        justify-content: center;
+        a{
+            background: map-get($botones , color1 );
+            padding: map-get($botones , padding-bottom-menu );
+            border: map-get($botones , border1 );
+            color: map-get($botones , color-texto1 );
+            font-size: map-get($botones , t-letra-form );
+            letter-spacing: map-get($botones , sp-letras );
+            text-decoration: map-get($botones , underline-text );
+            font-family:  map-get($botones , estilo-letra );
+            &:hover{
+                background-color: $color-principal;
+                color: $color-secundario;
+            }
+        }
+    }
+}
+
 
 /*--------------------MEDIA QUERIES----------------*/
 @media screen and (max-width:1298px) {
@@ -718,7 +751,7 @@
     /*contactanos*/
     #contactanos{
         padding: 2%;
-        .titulo-contactanos{
+        h2{
             margin: auto;
         }
     }
@@ -779,8 +812,8 @@
     /*contactanos*/
     .div-iframe-contactanos{
         iframe{
-            width: 550px;
-            height: 350px;
+            width: 500px;
+            height: 300px;
         }
     }
     /*-----SUSCRIBETE-----*/
@@ -824,23 +857,6 @@
 }
 
 @media screen and (max-width:609px) {
-    /*-----INDEX-----*/
-    /*contactanos*/
-    .titulo-contactanos{
-        font-size: 35px;
-    }
-    .div-iframe-contactanos{
-        iframe{
-            width: 500px;
-            height: 300px;
-        }
-    } 
-    .div-info-contactanos{
-        p{
-            padding-bottom: 3%;
-            font-size: 15px;
-        }
-    }
     /*-----SUSCRIBETE-----*/
     .section-suscribete{
         .div-beneficios{
@@ -916,7 +932,7 @@
     /*-----INDEX-----*/
     /*contactanos*/
     #contactanos{
-        .titulo-contactanos{
+        h2{
             font-size: 30px;
         }
         .div-container-contactanos{
@@ -924,6 +940,11 @@
                 iframe{
                     width: 400px;
                     height: 300px;
+                }
+            }
+            .div-form-contactanos{
+                .div-info-contactanos{
+                    padding-left: 10%;
                 }
             }
         }
@@ -956,9 +977,6 @@
 
 @media screen and (max-width:426px){
     /*-----INDEX-----*/
-    .titulo-querie{
-        font-size: 25px;
-    }
     #contactanos{
         .div-container-contactanos{
             .div-iframe-contactanos{
@@ -1036,6 +1054,9 @@
     /*nosotros*/
     #nosotros{
         .div-texto-nosotros{
+            h2{
+                font-size: 25px;
+            }
             p{
                 font-size: 15px;
             }
@@ -1043,6 +1064,11 @@
     }
     /*servicios*/
     #servicios{
+        .div-servicios{
+            h2{
+                font-size: 25px;
+            }
+        }
         .boton-mas-servicios{
             a{
                 font-size: 15px;
@@ -1052,6 +1078,11 @@
     }
     /*producciones*/
     #producciones{
+        .titulo-producciones{
+            h2{
+                font-size: 25px;
+            }
+        }
         .div-boton-mas-producciones{
             .boton-mas{
                 font-size: 15px;
@@ -1059,7 +1090,28 @@
             }
         }
     }
-    
+    /*contactanos*/
+    #contactanos{
+        h2{
+            font-size: 25px;
+        }
+        .div-container-contactanos{
+            .div-form-contactanos{
+                .div-info-contactanos{
+                    padding-left: 5%;
+                    .div-conteiner-datos{
+                        img{
+                            width: 2.5rem;
+                            height: 1.5rem;
+                        }
+                        p{
+                            font-size: 12px
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     /*-----LISTA DE PRECIOS-----*/
     .precios{

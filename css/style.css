@@ -19,8 +19,8 @@
 
 @media screen and (max-width: 1079px) {
   .icono-flotante img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     bottom: 20px;
     left: 19px;
@@ -31,7 +31,7 @@
   flex-direction: column;
   align-items: center; }
 
-#nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones h2, #contactanos .titulo-contactanos {
+#nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones h2, #contactanos h2 {
   font-size: 40px;
   font-family: 'Playfair Display SC', serif;
   text-decoration: underline;
@@ -42,7 +42,7 @@
   flex-direction: column;
   align-items: center; }
 
-#nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones h2, #contactanos .titulo-contactanos {
+#nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones h2, #contactanos h2 {
   font-size: 40px;
   font-family: 'Playfair Display SC', serif;
   text-decoration: underline;
@@ -142,7 +142,7 @@
   flex-direction: column;
   align-items: center; }
 
-#nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones h2, #contactanos .titulo-contactanos {
+#nosotros .div-texto-nosotros h2, #servicios .div-servicios h2, #producciones .titulo-producciones h2, #contactanos h2 {
   font-size: 40px;
   font-family: 'Playfair Display SC', serif;
   text-decoration: underline;
@@ -266,7 +266,7 @@
     flex-direction: column; } }
 
 /*-----------------INDEX-----------------*/
-/*--section 0 (NOSOTROS)--*/
+/*--section 0--*/
 .titulo-index {
   background-color: #d9a7a7;
   border: 6px dashed black;
@@ -396,7 +396,7 @@
 #contactanos {
   background-color: #d9a7a7;
   padding: 2%; }
-  #contactanos .titulo-contactanos {
+  #contactanos h2 {
     color: black;
     padding: 30px;
     text-align: center; }
@@ -751,6 +751,34 @@
         color: #e6cfcf;
         text-align: center; }
 
+/*------------ERROR 404-----------*/
+.body-error {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+  .body-error .div-texto-error {
+    border-left: 10px solid #d9a7a7;
+    color: #d9a7a7;
+    padding-left: 5%;
+    margin-bottom: 15%; }
+  .body-error .div-boton-error {
+    display: flex;
+    justify-content: center; }
+    .body-error .div-boton-error a {
+      background: black;
+      padding: 10px 20px;
+      border: 2px solid #d9a7a7;
+      color: #d9a7a7;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      font-family: "Montserrat Alternates"; }
+      .body-error .div-boton-error a:hover {
+        background-color: #d9a7a7;
+        color: black; }
+
 /*--------------------MEDIA QUERIES----------------*/
 @media screen and (max-width: 1298px) {
   /*-----INDEX-----*/
@@ -804,7 +832,7 @@
   /*contactanos*/
   #contactanos {
     padding: 2%; }
-    #contactanos .titulo-contactanos {
+    #contactanos h2 {
       margin: auto; } }
 
 @media screen and (max-width: 938px) {
@@ -838,8 +866,8 @@
   /*-----INDEX-----*/
   /*contactanos*/
   .div-iframe-contactanos iframe {
-    width: 550px;
-    height: 350px; }
+    width: 500px;
+    height: 300px; }
   /*-----SUSCRIBETE-----*/
   .section-suscribete .div-titulo-suscribete .div-suscribete-efecto {
     height: 50px; }
@@ -861,16 +889,6 @@
     height: 50px; } }
 
 @media screen and (max-width: 609px) {
-  /*-----INDEX-----*/
-  /*contactanos*/
-  .titulo-contactanos {
-    font-size: 35px; }
-  .div-iframe-contactanos iframe {
-    width: 500px;
-    height: 300px; }
-  .div-info-contactanos p {
-    padding-bottom: 3%;
-    font-size: 15px; }
   /*-----SUSCRIBETE-----*/
   .section-suscribete .div-beneficios {
     padding-left: 5%; }
@@ -907,11 +925,13 @@
 @media screen and (max-width: 490px) {
   /*-----INDEX-----*/
   /*contactanos*/
-  #contactanos .titulo-contactanos {
+  #contactanos h2 {
     font-size: 30px; }
   #contactanos .div-container-contactanos .div-iframe-contactanos iframe {
     width: 400px;
     height: 300px; }
+  #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos {
+    padding-left: 10%; }
   /*-----PRODUCCIONES-----*/
   .div-titulo-prod .div-galeria h1 {
     font-size: 250%; }
@@ -925,8 +945,6 @@
 
 @media screen and (max-width: 426px) {
   /*-----INDEX-----*/
-  .titulo-querie {
-    font-size: 25px; }
   #contactanos .div-container-contactanos .div-iframe-contactanos iframe {
     width: 250px;
     height: 150px; }
@@ -964,16 +982,32 @@
 @media screen and (max-width: 390px) {
   /*-----INDEX-----*/
   /*nosotros*/
+  #nosotros .div-texto-nosotros h2 {
+    font-size: 25px; }
   #nosotros .div-texto-nosotros p {
     font-size: 15px; }
   /*servicios*/
+  #servicios .div-servicios h2 {
+    font-size: 25px; }
   #servicios .boton-mas-servicios a {
     font-size: 15px;
     padding: 8px 20px; }
   /*producciones*/
+  #producciones .titulo-producciones h2 {
+    font-size: 25px; }
   #producciones .div-boton-mas-producciones .boton-mas {
     font-size: 15px;
     padding: 8px 20px; }
+  /*contactanos*/
+  #contactanos h2 {
+    font-size: 25px; }
+  #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos {
+    padding-left: 5%; }
+    #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos img {
+      width: 2.5rem;
+      height: 1.5rem; }
+    #contactanos .div-container-contactanos .div-form-contactanos .div-info-contactanos .div-conteiner-datos p {
+      font-size: 12px; }
   /*-----LISTA DE PRECIOS-----*/
   .precios {
     padding-top: 4%;

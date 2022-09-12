@@ -1,6 +1,6 @@
 # :hammer_and_wrench:Harmonious
 ## Tabla de Contenidos
-1. [Información General](#Informacion-General)
+1. [Información General](#informacion-general)
 2. [Tecnologías](#tecnologías)
 3. [Desarrolladores](#desarrolladores)
 4. [Información Personal](#información-personal)
@@ -21,7 +21,7 @@ Lista de tecnologías utilizadas en este proyecto:
 * [NodeJs](https://nodejs.org/en/download/): Versión 16.17
 * [npm](https://www.npmjs.com/package/npm): Versión 8.19.1
 
-## :keyboard:Desarrolladores:
+## Desarrolladores
 Todos aquellos que quieran continuar con el proyecto se utiliza HTML, SASS y Boostrap.
 A continuación les dejo los pasos para poder compilar con node-js:
 * Descargar e instalar NodeJs y npm
